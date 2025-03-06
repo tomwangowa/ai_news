@@ -1,0 +1,433 @@
+This message was sent from outside of Trend Micro. Please do not click links or open attachments unless you recognise the source of this email and know the content is safe.
+
+RL is all you need.
+
+AI News for 2/12/2025-2/13/2025. We checked 7 subreddits, 433 Twitters and 29 Discords (211 channels, and 5290 messages) for you. Estimated reading time saved (at 200wpm): 554 minutes. You can now tag @smol_ai for AINews discussions!
+
+This is a rollup of two distinct news items with nevertheless the same theme:
+
+o3 achieves a gold medal at the 2024 IOI and obtains a Codeforces rating on par with elite human competitors - in particular, the Codeforces score is at the 99.8-tile - only 199 humans are better than o3. Notably, team member Alex Wei noted that all the "inductive bias" methods also failed compared to the RL bitter lesson. image.png
+In Automating GPU Kernel Generation with DeepSeek-R1 and Inference Time Scaling, Nvidia found that DeepSeek r1 could write custom kernels that "turned out to be better than the optimized kernels developed by skilled engineers in some cases" image.png
+In the Nvidia case, the solution was also extremely simple, causing much consternation. image.png
+
+The Table of Contents and Channel Summaries have been moved to the web version of this email: [AINews] Reasoning Models are Near-Superhuman Coders (OpenAI IOI, Nvidia Kernels)!
+
+AI Twitter Recap
+
+AI Tools and Resources
+
+OpenAI Updates on o1, o3-mini, and DeepResearch: OpenAI announced that o1 and o3-mini now support both file & image uploads in ChatGPT. Additionally, DeepResearch is now available to all Pro users on mobile and desktop apps, expanding accessibility.
+Distributing Open Source Models Locally with Ollama: @ollama discusses distributing and running open source models for developers locally, highlighting it's complementary to hosted OpenAI models.
+'Deep Dive into LLMs' by @karpathy: @TheTuringPost shares a free 3+ hour video by @karpathy exploring how AI models like ChatGPT are built, including topics like pretraining, post-training, reasoning, and effective model use.
+ElevenLabs' Journey in AI Voice Synthesis: @TheTuringPost details how @elevenlabsio evolved from a weekend project to a $3.3 billion company, offering AI-driven TTS, voice cloning, and dubbing tools without open-sourcing.
+DeepResearch from OpenAI as a Mind-blowing Research Assistant: @TheTuringPost reviews DeepResearch from OpenAI, a virtual research assistant powered by a powerful o3 model with RL engineered for deep chain-of-thought reasoning, highlighting its features and benefits.
+Release of OpenThinker Models: @ollama announces OpenThinker models, fine-tuned from Qwen2.5, that surpass DeepSeek-R1 distillation models on some benchmarks.
+AI Research Advances
+
+DeepSeek R1 Generates Optimized Kernels: @abacaj reports that they put R1 in a loop for 15 minutes, resulting in code "better than the optimized kernels developed by skilled engineers" in some cases.
+Importance of Open-source AI for Scientific Discovery: @stanfordnlp emphasizes that failure to invest in open-source AI could hinder scientific discovery in western universities that cannot afford closed models.
+Sakana AI Labs' 'TAID' Paper Receives Spotlight at ICLR2025: @SakanaAILabs announces their new knowledge distillation method 'TAID' has been awarded a Spotlight (Top 5%) at ICLR2025.
+Apple's Research on Scaling Laws: @awnihannun highlights two recent papers from Apple on scaling laws for MoEs and knowledge distillation, contributed by @samira_abnar, @danbusbridge, and others.
+AI Infrastructure and Efficiency
+
+Advocating Data Centers over Mobile for AI Compute: @JonathanRoss321 argues that running AI on mobile devices is less energy-efficient compared to data centers, using analogies to illustrate the efficiency differences.
+AI Security and Safety
+
+Vulnerabilities in AI Web Agents Exposed: @micahgoldblum demonstrates how adversaries can fool AI web agents like Anthropic’s Computer Use into sending phishing emails or revealing credit card info, highlighting the brittleness of underlying LLMs.
+Meta's Automated Compliance Hardening (ACH) Tool: @AIatMeta introduces their ACH tool that hardens platforms against regressions with LLM-based test generation, enhancing compliance and security.
+AI Governance and Policy
+
+Insights from the France Action Summit: @sarahookr shares observations from the France Action Summit, noting that such summits are valuable as catalysts for important AI discussions and emphasizing the importance of understanding national efforts and scientific progress.
+Shifting from 'AI Safety' to 'Responsible AI': @AndrewYNg advocates for changing the conversation away from 'AI safety' towards 'responsible AI', arguing that it will speed up AI’s benefits and better address actual problems without hindering development.
+Memes/Humor
+
+'Rizz GPT' and Social Challenges Post-Lockdown: @andersonbcdefg humorously comments on how zoomers are building versions of 'Rizz GPT' because their brains are damaged from lockdown and they don't know how to have normal conversations.
+'Big Day for Communicable Diseases': @stevenheidel posts a cryptic message stating it's a "big day for communicable diseases", adding a touch of humor.
+AI Reddit Recap
+
+/r/LocalLlama Recap
+
+Theme 1. Google's FNet: Potential for Improved LLM Efficiency via Fourier Transforms
+
+This paper might be a breakthrough Google doesn't know they have (Score: 362, Comments: 24): The FNet paper from 2022 explores using Fourier Transforms to mix tokens, suggesting potential major efficiency gains in model training. The author speculates that replicating this approach or integrating it into larger models could lead to a 90% speedup and memory reduction, presenting a significant opportunity for advancements in AI model efficiency.
+Efficiency and Convergence Challenges: Users reported that while FNet worked, it was less effective than traditional attention mechanisms, particularly in small models, and faced significant convergence issues. This raises doubts about its scalability and efficacy in larger models.
+Alternative Approaches and Comparisons: Discussions mentioned alternative models like Holographic Reduced Representations (Hrrformer), which claims superior performance with less training, and M2-BERT, which shows greater accuracy on benchmarks. These alternatives highlight the complexity of evaluating trade-offs between training speed, accuracy, and generalization.
+Integration and Implementation: The FNet code is available on GitHub, but its integration with existing models like transformers is non-trivial due to its implementation in JAX. Users discussed potential hybrid approaches, such as creating variants like fnet-llama or fnet-phi, to explore differences in performance and hallucination tendencies.
+Theme 2. DIY High-Performance Servers for 70B LLMs: Strategies and Cost
+
+Who builds PCs that can handle 70B local LLMs? (Score: 108, Comments: 160): Building a home server capable of running 70B parameter local LLMs is discussed, with a focus on using affordable, older server hardware to maximize cores, RAM, and GPU RAM. The author inquires if there are professionals or companies that specialize in assembling such servers, as they cannot afford the typical $10,000 to $50,000 cost for high-end GPU-equipped home servers.
+Building a home server for 70B parameter LLMs can be achieved for under $3,000 using components like an Epyc 7532, 256GB RAM, and MI60 GPUs, as suggested by Psychological_Ear393. Some users like texasdude11 have shared setups using dual NVIDIA 3090s or P40 GPUs for efficient performance, providing detailed guides and YouTube videos for assembly and operation.
+The NVIDIA A6000 GPU is highlighted for its speed and capability in running 70B models; however, it is costly at around $5,000. Alternatives include setups with multiple RTX 3090 or 3060 GPUs, with users like Dundell and FearFactory2904 suggesting cost-effective builds using second-hand components.
+Users discuss the viability of using Macs, particularly M1 Ultra with 128GB RAM, for running 70B models efficiently, especially for chat applications, as noted by synn89. Future potential options include waiting for Nvidia Digits or AMD Strix Halo, which may offer better performance for home inference tasks.
+Theme 3. Gemini2.0's Dominance in OCR Benchmarking and Context Handling
+
+Gemini beats everyone is OCR benchmarking tasks in videos. Full Paper : https://arxiv.org/abs/2502.06445 (Score: 114, Comments: 26): Gemini-1.5 Pro excels in OCR benchmarking tasks for videos, achieving a Character Error Rate (CER) of 0.2387, Word Error Rate (WER) of 0.2385, and an Average Accuracy of 76.13%. Despite GPT-4o having a slightly higher overall accuracy at 76.22% and the lowest WER, Gemini-1.5 Pro is highlighted for its superior performance compared to models like RapidOCR and EasyOCR. Full Paper
+RapidOCR is noted as a fork of PaddleOCR, with minimal expected deviation in scores from its origin. There is interest in exploring direct PDF processing capabilities using Gemini-1.5 Pro, with a link provided for implementation on Google Cloud Vertex AI here.
+Users express a need for OCR benchmarking to include handwriting recognition, with Azure FormRecognizer praised for handling cursive text. A user reported that Gemini 2.0 Pro performed exceptionally well on Russian handwritten notes compared to other language models.
+There is a call for broader comparisons across multiple languages and models, including Gemini 2, Tesseract, Google Vision API, and Azure Read API. Despite some frustrations with Gemini's handling of simple tasks, users acknowledge its advancements in visual labeling, and Moondream is highlighted as a promising emerging model, with plans to add it to the OCR benchmark repository.
+NoLiMa: Long-Context Evaluation Beyond Literal Matching - Finally a good benchmark that shows just how bad LLM performance is at long context. Massive drop at just 32k context for all models. (Score: 402, Comments: 75): The NoLiMa benchmark highlights significant performance degradation in LLMs at long context lengths, with a marked drop at just 32k tokens across models like GPT-4, Llama, Gemini 1.5 Pro, and Claude 3.5 Sonnet. The graph and table show that scores fall below 50% of the base score at these extended lengths, indicating substantial challenges in maintaining performance with increased context.
+Degradation and Benchmark Comparisons: The NoLiMa benchmark shows substantial performance degradation in LLMs like llama3.1-70B, which scores 43.2% at 32k context length compared to 94.8% on RULER. This benchmark is considered more challenging than previous ones like LongBench, which focuses on multiple-choice questions and doesn't fully capture performance degradation across context lengths.
+Model Performance and Architecture Concerns: There's significant discussion on how reasoning models like o1/o3 handle long contexts, with some models performing poorly on hard subsets of questions. The limitations of current architectures, such as the quadratic complexity of attention mechanisms, are highlighted as a barrier to maintaining performance over long contexts, suggesting a need for new architectures like RWKV and linear attention.
+Future Model Testing and Expectations: Participants express interest in testing newer models like Gemini 2.0-flash/pro and Qwen 2.5 1M, hoping for improved performance in long-context scenarios. There's skepticism about claims of models handling 128k tokens effectively, with some users emphasizing that practical applications typically perform best with contexts under 8k tokens.
+Theme 4. Innovative Architectural Insights from DeepSeek: Expert Mixtures and Token Predictions
+
+Let's build DeepSeek from Scratch | Taught by MIT PhD graduate (Score: 245, Comments: 28): An MIT PhD graduate is launching a comprehensive educational series on building DeepSeek's architecture from scratch, focusing on foundational elements such as Mixture of Experts (MoE), Multi-head Latent Attention (MLA), Rotary Positional Encodings (RoPE), Multi-token Prediction (MTP), Supervised Fine-Tuning (SFT), and Group Relative Policy Optimisation (GRPO). The series, consisting of 35-40 in-depth videos totaling over 40 hours, aims to equip participants with the skills to independently construct DeepSeek's components, positioning them among the top 0.1% of ML/LLM engineers.
+Skepticism about Credentials: Some users express skepticism about the emphasis on prestigious credentials like MIT, suggesting that the content's quality should stand on its own without relying on the author's background. There's a call for content to be judged independently of the creator's academic or professional affiliations.
+Missing Technical Details: A significant point of discussion is the omission of Nvidia's Parallel Thread Execution (PTX) as a cost-effective alternative to CUDA in the series, highlighting a perceived gap in addressing DeepSeek's efficiency and cost-effectiveness. This suggests that understanding the technical underpinnings, not just the capabilities, is crucial for appreciating DeepSeek's architecture.
+Uncertainty about Computing Power: There is contention regarding the actual computing power used in DeepSeek's development, with some users criticizing speculative figures circulating online. The discussion underscores the importance of accurate data, particularly regarding resources like datasets and computing power, in understanding and replicating AI systems.
+Other AI Subreddit Recap
+
+/r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT
+
+Theme 1. OpenAI merges o3 into unified GPT-5
+
+OpenAI cancels its o3 AI model in favor of a ‘unified’ next-gen release (Score: 307, Comments: 66): OpenAI has decided to cancel its o3 AI model project, opting instead to focus on developing a unified next-generation release with GPT-5. The strategic shift suggests a consolidation of resources and efforts towards a single, more advanced AI model.
+There is a significant debate around whether OpenAI's move to integrate the o3 model into GPT-5 represents progress or a lack of innovation. Some users argue that this integration is a strategic simplification aimed at usability, while others see it as a sign of stagnation in model development, with DeepSeek R1 being cited as a competitive free alternative.
+Many commenters express concern over the loss of user control with the automatic model selection approach, fearing it may lead to suboptimal results. Users like whutmeow and jjjiiijjjiiijjj prefer manual model selection, worried that algorithmic decisions may prioritize company costs over user needs.
+The discussion also highlights confusion over the terminology used, with several users correcting the notion that o3 is canceled, clarifying instead that it is being integrated into GPT-5. This has led to concerns about misleading headlines and the potential implications for OpenAI's strategic direction and leadership.
+Altman said the silent part out loud (Score: 126, Comments: 59): Sam Altman announced that Orion, initially intended to be GPT-5, will instead launch as GPT-4.5, marking it as the final non-CoT model. Reports from Bloomberg, The Information, and The Wall Street Journal indicate that GPT-5 has faced significant challenges, showing less improvement over GPT-4 than its predecessor did. Additionally, the o3 model will not be released separately but will integrate into a unified system named GPT-5, likely due to the high operational costs revealed by the ARC benchmark, which could financially strain OpenAI if widely and frivolously used by users.
+Hardware and Costs: The inefficiency of running models on inappropriate hardware, such as Blackwell chips, and the misinterpretation of cost data due to repeated queries, were discussed as factors impacting the launch and operation of GPT-4.5 and GPT-5. Deep Research queries are priced at $0.50 per query, with plans offering 10 for plus members and 2 for free users.
+Model Evolution and Challenges: There is a consensus that non-CoT models may have reached a scalability limit, prompting a shift towards models with reasoning capabilities. This transition is seen as a necessary evolution, with some suggesting that GPT-5 represents a new direction rather than an iterative improvement over GPT-4.
+Reasoning and Model Selection: Discussions highlighted the potential advantages of reasoning models, with some users noting that reasoning models like o3 may overthink, while others suggest using a hybrid approach to select the most suitable model for specific tasks. The concept of models with adjustable thinking times being costly was also debated, as well as the potential for OpenAI to implement usage caps to manage expenses.
+I'm in my 50's and I just had ChatGPT write me a javascript/html calculator for my website. I'm shook. (Score: 236, Comments: 62): The author, in their 50s, used ChatGPT to create a JavaScript/HTML calculator for their website and was impressed by its ability to interpret vague instructions and refine the code, akin to a conversation with a web developer. Despite their previous limited use of AI, they were astonished by its capabilities, reflecting on their long history of observing technological advancements since 1977.
+Users shared experiences of ChatGPT aiding in diverse coding tasks, from creating SQL queries to building wikis and servers, emphasizing its utility in guiding through unfamiliar technologies. FrozenFallout and redi6 highlighted its role in simplifying complex processes and error handling, even for those with limited technical knowledge.
+Front_Carrot_1486 and BroccoliSubstantial2 expressed a shared sense of wonder at AI's rapid advancements, comparing it to past technological shifts, and noting the generational perspective on witnessing tech evolving from sci-fi to reality. They appreciated AI's ability to provide solutions and alternatives, despite occasional errors.
+Recommendations for further exploration included trying Cursor with a membership for a more impressive experience, as suggested by TheoreticalClick, and exploring app development with AI guidance, as mentioned by South-Ad-9635.
+Theme 2. Anthropic and OpenAI enhance reasoning models
+
+OpenAI increased its most advanced reasoning model’s rate limits by 7x. Now your turn, Anthropic. (Score: 486, Comments: 72): OpenAI has significantly increased the rate limits of its advanced reasoning model, o3-mini-high, by 7x for Plus users, allowing up to 50 per day. Additionally, OpenAI o1 and o3-mini now support both file and image uploads in ChatGPT.
+Users express strong dissatisfaction with Anthropic's perceived lack of urgency to respond to competitive pressures, with some canceling subscriptions due to the lack of compelling updates or features. Concerns include the company's focus on safety and content moderation over innovation, potentially losing their competitive edge.
+The increased rate limits for OpenAI's o3-mini-high model have been positively received, especially by Plus users, who appreciate the enhanced access. However, some believe that OpenAI prioritizes API business customers over web/app users, leading to lower limits for the latter.
+There is a sentiment of disappointment towards Anthropic, with users feeling that their focus on safety and corporate customers is overshadowing innovation and responsiveness to market competition. Some users express frustration with Claude's limitations and the lack of viable alternatives with similar capabilities.
+The Information: Claude hybrid reasoning model may be released in next few weeks (Score: 160, Comments: 44): Anthropic is reportedly set to release a Claude hybrid reasoning model in the coming weeks, offering a sliding scale feature that reverts to a non-reasoning mode when set to 0. The model is said to outperform o3-mini on some programming benchmarks and excels in typical programming tasks, while OpenAI's models are superior for academic and competitive coding.
+Anthropic's Focus on Safety is criticized by some users, with comparisons made to OpenAI's reduced censorship and the Gemini 2.0 models, which are praised for being less restricted. Some users find the censorship efforts to be non-issues, while others see them as unnecessary corporate appeasement.
+There is skepticism about the Claude hybrid reasoning model's effectiveness for writing tasks, with concerns that it might suffer similar issues to o3-mini. Users express a need for larger and more effective context windows, noting that Claude's supposed 200k token context starts to degrade significantly after 32k tokens.
+Users discuss the importance of context windows and output complexity, with some finding o3-mini-high's output overly complex and others emphasizing the need for a context window that maintains its integrity beyond 64k tokens.
+Deep reasoning coming soon (Score: 121, Comments: 42): The post titled "Deep reasoning coming soon" with the body content "Hhh" lacks substantive content and context to provide a detailed summary.
+Code Output Concerns: Estebansaa expressed skepticism about the value of deep reasoning if it can't surpass the current output of 300-400 lines of code and match o3's capability of over 1000 lines per request. Durable-racoon questioned the need for such large outputs, suggesting that even 300 lines can be overwhelming for review.
+API Access Issues: Hir0shima and others discussed the challenges of API access, highlighting the high costs and frequent errors. Zestyclose_Coat442 noted the unexpected expenses even when errors occur, while Mutare123 mentioned the likelihood of hitting response limits.
+Release Impatience: Joelrog pointed out that recent announcements about deep reasoning are still within a short timeframe, arguing against impatience and emphasizing that companies generally adhere to their release plans.
+AI Discord Recap
+
+A summary of Summaries of Summaries by Gemini 2.0 Flash Exp
+
+Theme 1. Reasoning LLM Models - Trends in New releases
+
+Nous Research Debuts DeepHermes-3 for Superior Reasoning: Nous Research launched the DeepHermes-3 Preview, showcasing advancements in unifying reasoning and intuitive language model capabilities, requiring a specific system prompt with tags to enable long chain of thought reasoning, enhancing systematic problem-solving. Benchmarks report significant enhancements in mathematical reasoning.
+Anthropic Plans Reasoning-Integrated Claude Version: Anthropic is set to release a new Claude model combining traditional LLM and reasoning AI capabilities, controlled by a token-based sliding scale, for tasks like coding, with rumors that it may be better than OpenAI's o3-mini-high in several benchmarks. The unveiling of these models and their new abilities signals the beginning of a new era of hybrid thinking in AI systems.
+Scale With Intellect as Elon Promises Grok-3: Elon Musk announced Grok 3, nearing launch, boasting superior reasoning capabilities over existing models, hinting at new levels of 'scary smart' AI with a launch expected in about two weeks, amidst a $97.4 billion bid for OpenAI's nonprofit assets. This announcement is expected to change the game.
+Theme 2. Tiny-yet-Mighty LLMs and Tooling Improvements
+
+DeepSeek-R1 Generates GPU Kernel Like A Boss: NVIDIA's blog post features LLM-generated GPU kernels, showcasing DeepSeek-R1 speeding up FlexAttention and achieving 100% numerical correctness on 🌽KernelBench Level 1, while also achieving 96% accurate results on Level-2 issues of the KernelBench benchmark. This automates computationally expensive tasks by allocating additional resources, but concerns arose over the benchmark itself.
+Hugging Face Smolagents Arrive and Streamline Your Workflow: Hugging Face launched smolagents, a lightweight agent framework alternative to deep research, with a processing time of about 13 seconds for 6 steps. Users can modify the original code to extend execution when run on a local server, providing adaptability.
+Codeium's MCP Boosts Coding Power: Windsurf Wave 3 (Codeium) introduces features like the Model Context Protocol (MCP), which integrates multiple AI models for enhanced efficiency and output, allowing users to configure tool calls to user-defined MCP servers and achieve higher quality code. The community is excited for this hybrid AI framework!
+Theme 3. Perplexity Finance Dashboard and Analysis of AI Models
+
+Perplexity Launches Your All-In-One Finance Dashboard: Perplexity released a new Finance Dashboard providing market summaries, daily highlights, and earnings snapshots. Users are requesting a dedicated button for dashboards on web and mobile apps.
+Model Performance Gets Thorough Scrutiny at PPLX AI: The models that Perplexity AI uses are in question. Debates emerged regarding AI models, specifically the efficiency and accuracy of R1 compared to alternatives like DeepSeek and Gemini.
+DeepSeek R1 Trounces OpenAI in Reasoning Prowess: A user reported Deepseek R1 displayed impressive reasoning when handling complex SIMD functions, outperforming o3-mini on OpenRouter. Users on HuggingFace celebrated V3's coding ability, and some on Unsloth AI saw it successfully handle tasks with synthetic data and GRPO/R1 distillation.
+Theme 4. Challenges and Creative Solutions
+
+DOOM Game Squeezed into a QR Code: A member successfully crammed a playable DOOM-inspired game, dubbed The Backdooms, into a single QR code, taking up less than 2.4kb, and released the project as open source under the MIT license for others to experiment with. The project used compression like .kkrieger, and has a blog post documenting the approach.
+Mobile Devices Limit RAM, Prompting Resourceful Alternatives: Mobile users note 12GB phones only allowing 2GB of accessible memory, hindering model performance, and one suggested an alternative 16GB ARM SBC for portable computing at ~\$100. If you don't have a fancy phone, upgrade it.
+Hugging Face Agents Course Leaves Users Disconnected: With users experiencing connection issues during the agents course, a member suggested changing the endpoint to a new link (https://jc26mwg228mkj8dw.us-east-1.aws.endpoints.huggingface.cloud) and also indicated a model name update to deepseek-ai/DeepSeek-R1-Distill-Qwen-32B was required, which is likely caused by overload. Try a different browser, and if all else fails... disconnect.
+Theme 5. Data, Copyrights, and Declarations
+
+US Rejects AI Safety Pact, Claims Competitive Edge: The US and UK declined to sign a joint AI safety declaration, with US leaders emphasizing their commitment to maintaining AI leadership. Officials cautioned engaging with authoritarian countries in AI could compromise infrastructure security.
+Thomson Reuters Wins Landmark AI Copyright Case: Thomson Reuters has won a significant AI copyright case against Ross Intelligence, determining that the firm infringed its copyright by reproducing materials from Westlaw. US Circuit Court Judge Stephanos Bibas dismissed all of Ross's defenses, stating that none of them hold water.
+LLM Agents MOOC Certificate Process Delayed: Numerous participants in LLM Agents course haven't received prior certificates, and must observe a manual send, while others needing help locating them are reminded that the declaration form is necessary for certificate processing. Where's my diploma?
+PART 1: High level Discord summaries
+
+Unsloth AI (Daniel Han) Discord
+
+DeepSeek's Dynamic Quantization Reduces Memory: Users explained that dynamic quantization implemented in DeepSeek models helps reduce memory usage while maintaining performance, though it currently mostly applies to specific models and detailed the benefits.
+Dynamic Quantization is a work in progress to reduce VRAM and run the 1.58-bit Dynamic GGUF version by Unsloth.
+GRPO Training Plateaus Prompt Regex Tweaks: Concerns were raised about obtaining expected rewards during GRPO training, with users observing a plateau in performance indicators and unexpected changes in completion lengths, with further details in Unsloth's GRPO blog post.
+One user reported modifying regex for better training outcomes, but inconsistencies in metrics remain a problem, and the impact on Llama3.1 (8B) performance metrics is unclear.
+Rombo-LLM-V3.0-Qwen-32b Impresses: A new model, Rombo-LLM-V3.0-Qwen-32b, has been released, showcasing impressive performance across various tasks, with more details in a redditor's post.
+Details on how to support the model developer's work on Patreon to vote for future models and access private repositories for just $5 a month.
+Lavender Method Supercharges VLMs: The Lavender method was introduced as a supervised fine-tuning technique that improves the performance of vision-language models (VLMs) using Stable Diffusion, with code and examples available at AstraZeneca's GitHub page.
+This method achieved performance boosts, including a +30% increase on 20 tasks and a +68% improvement on OOD WorldMedQA, showcasing the potential of text-vision attention alignment.
+HuggingFace Discord
+
+DOOM Game Squeezed into a QR Code: A member successfully crammed a playable DOOM-inspired game, dubbed The Backdooms, into a single QR code, taking up less than 2.4kb, and released the project as open source under the MIT license here.
+The creator documented the approach in this blog post providing insights on the technical challenges and solutions involved.
+Steev AI Assistant Simplifies Model Training: A team unveiled Steev, an AI assistant created to automate AI model training, reducing the need for constant supervision, further information available at Steev.io.
+The goal is to simplify the AI training process, eliminating tedious and repetitive tasks, and allowing researchers to concentrate on core aspects of model development and innovation.
+Rombo-LLM V3.0 Excels in Coding: A fresh model, Rombo-LLM-V3.0-Qwen-32b, has been launched, excelling in coding and math tasks, as shown in this Reddit post.
+The model's use of Q8_0 quantization significantly boosts its efficiency, allowing it to perform complex tasks without heavy computational requirements.
+Agents Course Verification Proves Problematic: Numerous participants in the Hugging Face AI Agents Course have reported ongoing problems verifying their accounts via Discord, resulting in recurring connection failures.
+Recommended solutions included logging out, clearing cache, and trying different browsers, and a lucky few eventually managed to complete the verification process.
+New Endpoints Suggested for Agent Connection: With users experiencing connection issues during the agents course, a member suggested changing the endpoint to a new link (https://jc26mwg228mkj8dw.us-east-1.aws.endpoints.huggingface.cloud) and also indicated a model name update to deepseek-ai/DeepSeek-R1-Distill-Qwen-32B was required.
+This fix could solve the recent string of issues faced by course participants trying to use LLMs in their agent workflows.
+OpenAI Discord
+
+Pro users Get Deep Research Access: Deep research access is now available for all Pro users on multiple platforms including mobile and desktop apps (iOS, Android, macOS, and Windows).
+This enhances research capabilities on various devices.
+OpenAI o1 & o3 support File & Image Uploads: OpenAI o1 and o3-mini now support both file and image uploads in ChatGPT.
+Additionally, o3-mini-high limits have been increased by 7x for Plus users, allowing up to 50 uploads per day.
+OpenAI Unveils Model Spec Update: OpenAI shared a major update to the Model Spec, detailing expectations for model behavior.
+The update emphasizes commitments to customizability, transparency, and fostering an atmosphere of intellectual freedom.
+OpenAI's Ownership Faces Scrutiny: Discussions revolve around the possibility of OpenAI being bought by Elon Musk, with many expressing skepticism about this happening and hopes for open-sourcing the technology if it occurs.
+Users speculate that major tech companies may prioritize profit over public benefit, leading to fears of excessive control over AI.
+GPT-4o has free limits: Custom GPTs operate on the GPT-4o model, with limits that are changing daily based on various factors, with only some fixed values like AVM 15min/month.
+Users must observe the limits based on their region and usage timezone.
+Cursor IDE Discord
+
+o3-mini Falls Behind Claude: Users have observed that OpenAI's o3-mini model underperforms in tool calling compared to Claude, often requiring multiple prompts to achieve desired outcomes, which led to frustration.
+Many expressed that Claude's reasoning models excel at tool use, suggesting the integration of a Plan/Act mode similar to Cline to improve user experience.
+Hybrid AI Model Excites Coders: The community shows excitement for Anthropic's upcoming hybrid AI model, which reportedly surpasses OpenAI's o3-mini in coding tasks when leveraging maximum reasoning capabilities.
+The anticipation stems from the new model's high performance on programming benchmarks, indicating it could significantly boost coding workflows relative to current alternatives.
+Tool Calling Draws Concern: Users voiced dissatisfaction with o3-mini's limited flexibility and efficiency in tool calling, questioning its practical utility in real-world coding scenarios.
+Discussions emphasized a demand for AI models to simplify complex coding tasks, prompting suggestions to establish best practices in prompting to elicit higher quality code.
+MCP Usage Becomes Topic of Discussion: The concept of MCP (Multi-Channel Processor) surfaced as a tool for improving coding tasks by integrating multiple AI models for enhanced efficiency and output.
+Users have been sharing experiences and strategies for utilizing MCP servers to optimize coding workflows and overcome the limitations of individual models.
+Windsurf Pricing Dissatisfies: Discussions touched on the inflexible pricing of Windsurf, specifically its restriction against users employing their own keys, which has led to user dissatisfaction.
+Many users expressed a preference for Cursor's features and utility over competitors, highlighting its advantages in cost effectiveness and overall user experience.
+Nous Research AI Discord
+
+DeepHermes-3 Unites Reasoning: Nous Research launched the DeepHermes-3 Preview, an LLM integrating reasoning with traditional language models, available on Hugging Face.
+The model requires a specific system prompt with tags to enable long chain of thought reasoning, enhancing systematic problem-solving, and has shown significant enhancements in mathematical reasoning.
+Nvidia's LLM Kernels Accelerate: Nvidia's blog post features LLM-generated GPU kernels speeding up FlexAttention while achieving 100% numerical correctness on 🌽KernelBench Level 1.
+This signals notable progress in GPU performance optimization, and members suggested r1 kimik and synthlab papers for up-to-date information on LLM advancements.
+Mobile Device RAMs Hamper: Members noted that 12GB phones are only allowing 2GB of accessible memory, which hindered their ability to run models.
+A user suggested acquiring a 16GB ARM SBC for portable computing, which would allow for running small LLMs while traveling for ~100, providing an affordable option for those interested.
+US Rejects AI Safety Pact: The US and UK declined to sign a joint AI safety declaration, with US leaders emphasizing their commitment to maintaining AI leadership, according to ArsTechnica report.
+Officials cautioned that engaging with authoritarian countries in AI could compromise national infrastructure security, citing examples like CCTV and 5G as subsidized exports for undue influence.
+OpenRouter (Alex Atallah) Discord
+
+Groq DeepSeek R1 70B Sprints at 1000 TPS: OpenRouter users are celebrating the addition of Groq DeepSeek R1 70B, which hits a throughput of 1000 tokens per second, offering parameter customization and rate limit adjustments. The announcement was made on OpenRouter AI's X account.
+This is part of a broader integration designed to enhance user interaction with the platform.
+New Sorting Tweaks Boost UX: Users can now customize default sorting for model providers, focusing on throughput or balancing speed and cost in account settings. To access the fastest provider available, append :nitro to any model name, as highlighted in OpenRouter's tweet.
+This feature allows users to tailor their experience based on their priorities.
+API Embraces Native Token Counting: OpenRouter plans to switch the usage field in the API from GPT token normalization to the native token count of models and they are asking for user feedback.
+There are speculations about how this change might affect models like Vertex and other models with different token ratios.
+Deepseek R1 Trounces OpenAI in Reasoning: A user reported Deepseek R1 displayed impressive reasoning when handling complex SIMD functions, outperforming o3-mini, saying it was 'stubborn'.
+The team is exploring this option and acknowledged user concerns about moderation issues.
+Users Cry Foul on Google Rate Limits: Users are encountering frequent 429 errors from Google due to resource exhaustion, especially affecting the Sonnet model.
+The OpenRouter team is actively addressing growing rate limit issues caused by Anthropic capacity limitations.
+Perplexity AI Discord
+
+Perplexity Releases Finance Dashboard: Perplexity released a new Finance Dashboard providing market summaries, daily highlights, and earnings snapshots.
+Users are requesting a dedicated button for dashboards on web and mobile apps.
+Doubts Arise Over AI Model Performance: Debates emerged regarding AI models, specifically the efficiency and accuracy of R1 compared to alternatives like DeepSeek and Gemini, as well as preferred usage and performance metrics.
+Members shared experiences, citing features and functionalities that could improve user experience.
+Perplexity Support Service Criticized: A user reported issues with the slow response and lack of support from Perplexity’s customer service related to being charged for a Pro account without access.
+This spurred discussion on the need for clear communication and effective support teams.
+API Suffers Widespread 500 Errors: Multiple members reported experiencing a 500 error across all API calls, with failures in production.
+The errors persisted for some time before the API was reported to be back up.
+Enthusiasm for Sonar on Cerebras: A member expressed strong interest in becoming a beta tester for the API version of Sonar on Cerebras.
+The member stated they have been dreaming of this for months, indicating potential interest in this integration.
+Codeium (Windsurf) Discord
+
+Windsurf Wave 3 Goes Live!: Windsurf Wave 3 introduces features like the Model Context Protocol (MCP), customizable app icons, enhanced Tab to Jump navigation, and Turbo Mode, detailed in the Wave 3 blog post.
+The update also includes major upgrades such as auto-executing commands and improved credit visibility, further detailed in the complete changelog.
+MCP Server Options Elusive Post-Update?: After updating Windsurf, some users reported difficulty locating the MCP server options, which were resolved by reloading the window.
+The issue highlighted the importance of refreshing the interface to ensure that the MCP settings appear as expected, enabling configuration of tool calls to user-defined MCP servers.
+Cascade Plagued by Performance Woes: Users have been reporting that the Cascade model experiences sluggish performance and frequent crashing, often requiring restarts to restore functionality.
+Reported frustrations include slow response times and increased CPU usage during operation, underscoring stability problems.
+Codeium 1.36.1 Seeks to Fix Bugs: The release of Codeium 1.36.1 aims to address existing problems, with users recommended to switch to the pre-release version in the meantime.
+Past attempts at fixing issues with 2025 writing had been unsuccessful, highlighting the need for the update.
+Windsurf Chat Plagued by Instability: Windsurf chat users are experiencing frequent freezing, loss of conversation history, and workflow disruptions.
+Suggested solutions included reloading the application and reporting bugs to address these critical stability problems.
+LM Studio Discord
+
+Qwen-2.5 VL Faces Performance Hiccups: Users report slow response times and memory issues with the Qwen-2.5 VL model, particularly after follow-up prompts, leading to significant delays.
+The model's memory usage spikes, possibly relying on SSD instead of VRAM, which is particularly noticeable on high-spec machines.
+Decoding Speculation Requires Settings Tweaks: Difficulties uploading models related to Speculative Decoding led to troubleshooting, revealing users needed to adjust settings and ensure compatible models are selected.
+The issue highlights the importance of matching model configurations with the selected speculative decoding functionality.
+Tesla K80 PCIe sparks debate: The potential of using a $60 Tesla K80 PCIe with 24GB VRAM for LLM tasks was discussed, raising concerns about power and compatibility.
+Users suggested that while affordable, the K80's older architecture and potential setup problems might make a GTX 1080 Ti a better alternative.
+SanDisk Supercharges VRAM with HBF Memory: SanDisk introduced new high-bandwidth flash memory capable of enabling 4TB of VRAM on GPUs, aimed at AI inference applications requiring high bandwidth and low power.
+This HBF memory positions itself as a potential alternative to traditional HBM in future AI hardware, according to Tom's Hardware.
+GPU MODE Discord
+
+Blackwell's Tensor Memory Gets Scrutinized: Discussions clarify that Blackwell GPUs' tensor memory is fully programmer managed, featuring dedicated allocation functions as detailed here, and it's also a replacement for registers in matrix multiplications.
+Debates emerge regarding the efficiency of tensor memory in handling sparsity and microtensor scaling, which can lead to capacity wastage, complicating the fitting of accumulators on streaming multiprocessors if not fully utilized.
+D-Matrix plugs innovative kernel engineering: D-Matrix is hiring for kernel efforts, inviting those with CUDA experience to connect and explore opportunities in their unique stack, recommending outreach to Gaurav Jain on LinkedIn for insights into their innovative hardware and architecture.
+D-Matrix's Corsair stack aims for speed and energy efficiency, potentially transforming large-scale inference economics, and claims a competitive edge against H100 GPUs, emphasizing sustainable solutions in AI.
+SymPy Simplifies Backward Pass Derivation: Members show curiosity about using SymPy for deriving backward passes of algorithms, to manage complexity.
+Discussion occurred around issues encountered with gradgradcheck(), relating to unexpected output behavior, with intent to clarify points and follow-up on GitHub if issues persist, hinting at the complexity in maintaining accurate intermediate outputs.
+Reasoning-Gym Revamps Evaluation Metrics: The Reasoning-Gym community discusses performance drops on MATH-P-Hard, and releases a new pull request for Graph Coloring Problems, with standardization of the datasets with unified prompts to streamline evaluation processes, improving machine compatibility of outputs, detailed in the PR here.
+Updates such as the Futoshiki puzzle dataset aim for cleaner solvers and improved logical frameworks, as seen in this PR, coupled with establishing a standard method for averaging scores across datasets for consistent reporting.
+DeepSeek Automates Kernel Generation: NVIDIA presents the use of the DeepSeek-R1 model to automatically generate numerically correct kernels for GPU applications, optimizing them during inference.
+The generated kernels achieved 100% accuracy on Level-1 problems and 96% on Level-2 issues of the KernelBench benchmark, but concerns were voiced about the saturation of the benchmark.
+Interconnects (Nathan Lambert) Discord
+
+GRPO Turbocharges Tulu Pipelines: Switching from PPO to GRPO in the Tulu pipeline resulted in a 4x performance gain, with the new Llama-3.1-Tulu-3.1-8B model showcasing advancements in both MATH and GSM8K benchmarks, as Costa Huang announced.
+This transition signifies a notable evolution from earlier models introduced last fall.
+Anthropic's Claude Gets Reasoning Slider: Anthropic's upcoming Claude model will fuse a traditional LLM with reasoning AI, enabling developers to fine-tune reasoning levels via a sliding scale, potentially surpassing OpenAI’s o3-mini-high in several benchmarks, per Stephanie Palazzolo's tweet.
+This represents a shift in model training and operational capabilities designed for coding tasks.
+DeepHermes-3 Thinks Deeply, Costs More: Nous Research introduced DeepHermes-3, an LLM integrating reasoning with language processing, which can toggle long chains of thought to boost accuracy at the cost of greater computational demand, as noted in Nous Research's announcement.
+The evaluation metrics and comparison with Tulu models sparked debate due to benchmark score discrepancies, specifically with the omission of comparisons to the official 8b distill release, which boasts higher scores (~36-37% GPQA versus r1-distill's ~49%).
+EnigmaEval's Puzzles Stump AI: Dan Hendrycks unveiled EnigmaEval, a suite of intricate reasoning challenges where AI systems struggle, scoring below 10% on normal puzzles and 0% on MIT-level challenges, per Hendrycks' tweet.
+This evaluation aims to push the boundaries of AI reasoning capabilities.
+OpenAI Signals AGI Strategy Shift: Sam Altman hinted that OpenAI's current strategy of scaling up will no longer suffice for AGI, suggesting a transition as they plan to release GPT-4.5 and GPT-5; OpenAI will integrate its systems to provide a more seamless experience.
+They will also address community frustrations with the model selection step.
+Eleuther Discord
+
+Debate Emerges on PPO-Clip's Utility: Members rehashed applying PPO-Clip with different models to generate rollouts, echoing similar ideas from past conversations.
+A member voiced skepticism regarding this approach's effectiveness based on previous attempts.
+Forgetting Transformer Performance Tuned: A conversation arose around the Forgetting Transformer, particularly if changing from sigmoid to tanh activation could positively impact performance.
+The conversation also entertained introducing negative attention weights, underscoring potential sophistication in attention mechanisms.
+Citations of Delphi Made Easier: Members suggested it's beneficial to combine citations for Delphi from both the paper and the GitHub page for comprehensive attribution.
+It was also suggested that one use arXiv's autogenerated BibTeX entries for common papers for standardization purposes.
+Hashing Out Long Context Model Challenges: Members highlighted concerns about the challenges associated with current benchmarks for long context models like HashHop and the iterative nature of solving 1-NN.
+Questions arose around the theoretical feasibility of claims made by these long context models.
+Stability.ai (Stable Diffusion) Discord
+
+Stable Diffusion users fail to save progress: A user reported losing generated images due to not having auto-save enabled in Stable Diffusion, then inquired about image recovery options.
+The resolution to this problem involved debugging which web UI version they had in order to determine the appropriate save settings.
+Linux throws ComfyUI users OOM Errors: A user switching from Windows to Pop Linux experienced Out Of Memory (OOM) errors in ComfyUI despite previous success.
+The community discussed confirming system updates and recommended drivers, highlighting the differences in dependencies between operating systems.
+Character Consistency Challenges Plague AI Models: A user struggled with maintaining consistent character designs across models, sparking suggestions to use Loras and tools like FaceTools and Reactor.
+Recommendations emphasized selecting models designed for specific tasks.
+Stability's Creative Upscaler Still MIA: Users questioned the release status of Stability's creative upscaler, with assertions it hadn’t been released yet.
+Discussions included the impact of model capabilities on requirements like memory and performance.
+Account Sharing Questioned: A user's request to borrow a US Upwork account for upcoming projects triggered skepticism.
+Members raised concerns about the feasibility and implications of 'borrowing' an account.
+Latent Space Discord
+
+OpenAI Unifies Models with GPT-4.5/5: OpenAI is streamlining its product offerings by unifying O-series models and tools in upcoming releases of GPT-4.5 and GPT-5, per their roadmap update.
+This aims to simplify the AI experience for developers and users by integrating all tools and features more cohesively.
+Anthropic Follows Suit with Reasoning AI: Anthropic plans to soon launch a new Claude model that combines traditional LLM capabilities with reasoning AI, controllable via a token-based sliding scale, according to Stephanie Palazzolo's tweet.
+This echoes OpenAI's approach, signaling an industry trend towards integrating advanced reasoning directly into AI models.
+DeepHermes 3 Reasoning LLM Preview Released: Nous Research has unveiled a preview of DeepHermes 3, an LLM integrating reasoning capabilities with traditional response functionalities to boost performance, detailed on HuggingFace.
+The new model seeks to deliver enhanced accuracy and functionality as a step forward in LLM development.
+Meta Hardens Compliance with LLM-Powered Tool: Meta has introduced its Automated Compliance Hardening (ACH) tool, which utilizes LLM-based test generation to bolster software security by creating undetected faults for testing, explained in Meta's engineering blog.
+This tool aims to enhance privacy compliance by automatically generating unit tests targeting specific fault conditions in code.
+Yannick Kilcher Discord
+
+Hugging Face Launches Smolagents: Hugging Face has launched smolagents, an agent framework alternative to deep research, with a processing time of approximately 13 seconds for 6 steps.
+Users can modify the original code to extend execution when run on a local server, providing adaptability.
+Musk Claims Grok 3 Outperforms Rivals: Elon Musk announced his new AI chatbot, Grok 3, is nearing release and outperforms existing models in reasoning capabilities, with a launch expected in about two weeks.
+This follows Musk's investor group's $97.4 billion bid to acquire OpenAI's nonprofit assets amid ongoing legal disputes with the company.
+Thomson Reuters Wins Landmark AI Copyright Case: Thomson Reuters has won a significant AI copyright case against Ross Intelligence, determining that the firm infringed its copyright by reproducing materials from Westlaw.
+US Circuit Court Judge Stephanos Bibas dismissed all of Ross's defenses, stating that none of them hold water.
+Innovative Approaches to Reinforcement Learning: Discussion emerged about using logits as intermediate representations in a new reinforcement learning model, stressing delays in normalization for effective sampling.
+The proposal includes replacing softmax with energy-based methods and integrating multi-objective training paradigms for more effective model performance.
+New Tool Fast Tracks Literature Reviews: A member introduced a new tool for fast literature reviews available at Deep-Research-Arxiv, emphasizing its simplicity and reliability.
+Additionally, a Hugging Face app was mentioned that facilitates literature reviews with the same goals of being fast and efficient.
+LlamaIndex Discord
+
+LlamaIndex Seeks Open Source Engineer: LlamaIndex is hiring a full-time open source engineer to enhance its framework, appealing to those passionate about open source, Python, and AI, as announced in their job post.
+The position offers a chance to develop cutting-edge features for the LlamaIndex framework.
+Nomic AI Embedding Model Bolsters Agentic Workflows: LlamaIndex highlighted new research from Nomic AI emphasizing the role of embedding models in improving Agentic Document Workflows, which they shared in a tweet.
+The community anticipates improved AI workflow integration from this embedding model.
+LlamaIndex & Google Cloud: LlamaIndex has introduced integrations with Google Cloud databases that facilitate data storage, vector management, document handling, and chat functionalities, detailed in this post.
+These enhancements aim to simplify and secure data access while using cloud capabilities.
+Fine Tuning LLMs Discussion: A member asked about good reasons to finetune a model in the #ai-discussion channel.
+No additional information was provided in the channel to address this question.
+Notebook LM Discord
+
+NotebookLM Creates Binge-Worthy AI Podcasts: Users are praising NotebookLM for transforming written content into podcasts quickly, emphasizing its potential for content marketing on platforms like Spotify and Substack.
+Enthusiasts believe podcasting is a content marketing tool, highlighting a significant potential audience reach and ease of creation.
+Unlock New Revenue Streams Through AI-Podcasts: Users are exploring creating podcasts with AI to generate income of about $7,850/mo by running a two-person AI-podcast, while focusing on creating content quickly.
+They claim that AI-driven podcast creation could result in a 300% increase in organic reach and content consumption, using tools such as Substack.
+Library of AI-Generated Podcast Hosts Sparks Excitement: Community members discussed the potential for creating a library of AI-generated podcast hosts, showcasing diverse subjects and content styles.
+Enthusiasts are excited about collaborating and sharing unique AI-generated audio experiences to enhance community engagement.
+Community Awaits Multi-Language Support in NotebookLM: Users are eager for NotebookLM to expand its capabilities to support other languages beyond English, which highlights a growing interest in accessible AI tools globally.
+Although language settings can be adjusted, audio capabilities remain limited to English-only outputs for now, causing frustration amongst the community.
+Navigating NotebookLM Plus Features and Benefits: NotebookLM Plus provides features like interactive podcasts, which are beneficial for students, and may not be available in the free version, according to a member.
+Another user suggested transitioning to Google AI Premium to access bundled features, which led to a discussion of how 'Google NotebookLM is really good...'.
+Modular (Mojo 🔥) Discord
+
+Modular Posts New Job Openings: A member shared that new job postings have been posted by Modular.
+The news prompted excitement among members seeking opportunities within the Mojo ecosystem.
+Mojo Sum Types Spark Debate: Members contrasted Mojo sum types with Rust-like sum types and C-style enums, noting that Variant addresses many needs, but that parameterized traits take higher priority.
+A user's implementation of a hacky union type using the variant module highlighted the limitations of current Mojo implementations.
+ECS Definition Clarified in Mojo Context: A member clarified the definition of ECS in the context of Mojo, stating that state should be separated from behavior, similar to the MonoBehavior pattern in Unity3D.
+Community members agreed that an example followed ECS principles, with state residing in components and behavior in systems.
+Unsafe Pointers Employed for Function Wrapping: A discussion on storing and managing functions within structs in Mojo led to an example using OpaquePointer to handle function references safely.
+The exchange included complete examples and acknowledged the complexities of managing lifetimes and memory when using UnsafePointer.
+MAX Minimizes CUDA Dependency: MAX only relies on the CUDA driver for essential functions like memory allocation, which minimizes CUDA dependency.
+A member noted that MAX takes a lean approach to GPU use, especially with NVIDIA hardware, to achieve optimal performance.
+MCP (Glama) Discord
+
+MCP Client Bugs Plague Users: Members shared experiences with MCP clients, highlighting wong2/mcp-cli for its out-of-the-box functionality, while noting that buggy clients are a common theme.
+Developers discussed attempts to work around the limitations of existing tools.
+OpenAI Models Enter the MCP Arena: New users expressed excitement about MCP's capabilities, questioning whether models beyond Claude could adopt MCP support.
+It was noted that while MCP is compatible with OpenAI models, projects like Open WebUI may not prioritize it.
+Claude Desktop Users Hit Usage Limits: Users reported that usage limits on Claude Desktop are problematic, suggesting that Glama's services could provide a workaround.
+A member emphasized how these limitations affect their use case, noting that Glama offers cheaper and faster alternatives.
+Glama Gateway Challenging OpenRouter: Members compared Glama's gateway with OpenRouter, noting Glama's lower costs and privacy guarantees.
+While Glama supports fewer models, it is praised for being fast and reliable, making it a solid choice for certain applications.
+Open WebUI Attracts Attention: Several users expressed curiosity about Open WebUI, citing its extensive feature set and recent roadmap updates for MCP support.
+Members shared positive remarks about its usability and their hope to transition fully away from Claude Desktop.
+tinygrad (George Hotz) Discord
+
+DeepSeek-R1 Automates GPU Kernel Generation: A blog post highlighted the DeepSeek-R1 model's use in improving GPU kernel generation by using test-time scaling allocating more computational resources during inference, improving model performance, linked in the NVIDIA Technical Blog.
+The article suggests that AI can strategize effectively by evaluating multiple outcomes before selecting the best, mirroring human problem-solving.
+Tinygrad Graph Rewrite Bug Frustrates Members: Members investigated CI failures due to a potential bug where incorrect indentation removed bottom_up_rewrite from RewriteContext.
+Potential deeper issues with graph handling, such as incorrect rewrite rules or ordering, were also considered.
+Windows CI Backend Variable Propagation Fixed: A member noted that Windows CI failed to propagate the backend environment variable between steps and submitted a GitHub pull request to address this.
+The PR ensures that the backend variable persists by utilizing $GITHUB_ENV during CI execution.
+Tinygrad Promises Performance Gains Over PyTorch: Users debated the merits of switching from PyTorch to tinygrad, considering whether the learning curve is worth the effort, especially for cost efficiency or grasping how things work 'under the hood'.
+Using tinygrad could eventually lead to cheaper hardware or a faster model compared to PyTorch, offering optimization and resource management advantages.
+Community Warns Against AI-Generated Code: Members emphasized reviewing code diffs before submission, noting that minor whitespace changes could cause PR closures, also urging against submitting code directly generated by AI.
+The community suggested using AI for brainstorming and feedback, respecting members' time, and encouraging original contributions.
+LLM Agents (Berkeley MOOC) Discord
+
+LLM Agents Hackathon Winners Announced: The LLM Agents MOOC Hackathon announced its winning teams from 3,000 participants across 127 countries, highlighting amazing participation from the global AI community, according to Dawn Song's tweet.
+Top representation included UC Berkeley, UIUC, Stanford, Amazon, Microsoft, and Samsung, with full submissions available on the hackathon website.
+Spring 2025 MOOC Kicks Off: The Spring 2025 MOOC officially launched, targeting the broader AI community with an invitation to retweet Prof Dawn Song's announcement, and building on the success of Fall 2024, which had 15K+ registered learners.
+The updated curriculum covers advanced topics such as Reasoning & Planning, Multimodal Agents, and AI for Mathematics and Theorem Proving and invites everyone to join the live classes streamed every Monday at 4:10 PM PT.
+Certificate Chaos in MOOC Questions: Multiple users reported not receiving their certificates for previous courses, with one student requesting it be resent and another needing help locating it, but it might take until the weekend to fulfill.
+Tara indicated that there were no formal grades for Ninja Certification and suggested testing prompts against another student's submissions in an assigned channel. Additionally, submission of the declaration form is necessary for certificate processing.
+Guidance Sought for New AI/ML Entrants: A new member expressed their interest in getting guidance on starting in the AI/ML domain and understanding model training techniques.
+No guidance was provided in the channel.
+Torchtune Discord
+
+Torchtune Enables Distributed Inference: Users can now run distributed inference on multiple GPUs with Torchtune, check out the GitHub recipe for implementation details.
+Using a saved model with vLLM offers additional speed benefits.
+Torchtune Still Missing Docker Image: There is currently no Docker image available for Torchtune, which makes it difficult for some users to install it.
+The only available way to install it is by following the installation instructions on GitHub.
+Checkpointing Branch Passes Test: The new checkpointing branch has been successfully cloned and is performing well after initial testing.
+Further testing of the recipe_state.pt functionality is planned, with potential documentation updates on resuming training.
+Team Eagerly Collaborates on Checkpointing PR: Team members express enthusiasm and a proactive approach to teamwork regarding the checkpointing PR.
+This highlights a shared commitment to improving the checkpointing process.
+DSPy Discord
+
+NVIDIA Scales Inference with DeepSeek-R1: NVIDIA's experiment showcases inference-time scaling using the DeepSeek-R1 model to optimize GPU attention kernels, enabling better problem-solving by evaluating multiple outcomes, as described in their blog post.
+This technique allocates additional computational resources during inference, mirroring human problem-solving strategies.
+Navigating LangChain vs DSPy Decisions: Discussion around when to opt for LangChain over DSPy emphasized that both serve distinct purposes, with one member suggesting prioritizing established LangChain approaches if the DSPy learning curve appears too steep.
+The conversation underscored the importance of evaluating project needs against the complexity of adopting new frameworks.
+DSPy 2.6 Changelog Unveiled: A user inquired about the changelog for DSPy 2.6, particularly regarding the effectiveness of instructions for Signatures compared to previous versions.
+Clarification revealed that these instructions have been present since 2022, with a detailed changelog available on GitHub for further inspection, though no link was given.
+Nomic.ai (GPT4All) Discord
+
+GPT4All Taps into Deepseek R1: GPT4All v3.9.0 allows users to download and run Deepseek R1 locally, focusing on offline functionality.
+However, running the full model locally is difficult, as it appears limited to smaller variants like a 13B parameter model that underperforms the full version.
+LocalDocs troubles Users: A user reported that the LocalDocs feature is basic, providing accurate results only about 50% of the time with TXT documents.
+The user wondered whether the limitations arise from using the Meta-Llama-3-8b instruct model or incorrect settings.
+NOIMC v2 waits for Implementation: Members wondered why the NOIMC v2 model has not been properly implemented, despite acknowledgement of its release.
+A link to the nomic-embed-text-v2-moe model was shared, highlighting its multilingual performance and capabilities.
+Multilingual Embeddings Boast 100 Languages: The nomic-embed-text-v2-moe model supports about 100 languages with high performance relative to models of comparable size, as well as flexible embedding dimensions and is fully open-source.
+Its code was shared.
+Community Seeks Tool to convert Prompts to Code: A user is seeking advice on tools to convert English prompts into workable code.
+Concrete suggestions are needed.
+Cohere Discord
+
+Cohere's Chaotic Scoring: A user found that Rerank 3.5 gives documents different scores when processed in different batches, which they did not expect since it is a cross-encoder.
+The variability in scoring was described as counterintuitive.
+Cohere Struggles with Salesforce's BYOLLM: A member inquired about using Cohere as an LLM with Salesforce's BYOLLM open connector, citing issues with the chat endpoint at api.cohere.ai.
+They are attempting to create an https REST service to call Cohere's chat API, as suggested by Salesforce support.
+The MLOps @Chipro Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+The Gorilla LLM (Berkeley Function Calling) Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+The AI21 Labs (Jamba) Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+PART 2: Detailed by-Channel summaries and links
+
+The full channel by channel breakdowns have been truncated for email.
+
+If you want the full breakdown, please visit the web version of this email: [AINews] Reasoning Models are Near-Superhuman Coders (OpenAI IOI, Nvidia Kernels)!
+
+If you enjoyed AInews, please share with a friend! Thanks in advance!
+
+This was issue #381 of AI News. You can subscribe, unsubscribe, or view this email online.
+
+This email brought to you by Buttondown, the easiest way to start and grow your newsletter.
+
+​
