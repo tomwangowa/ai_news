@@ -1,0 +1,462 @@
+This message was sent from outside of Trend Micro. Please do not click links or open attachments unless you recognise the source of this email and know the content is safe.
+
+Two stage RL is all you need?
+
+AI News for 3/5/2025-3/6/2025. We checked 7 subreddits, 433 Twitters and 29 Discords (227 channels, and 3619 messages) for you. Estimated reading time saved (at 200wpm): 351 minutes. You can now tag @smol_ai for AINews discussions!
+
+As previewed last November and again last month, the Alibaba Qwen team is finally out with their final version of QwQ, their Qwen2.5-Plus + Thinking (QwQ) post train boasting numbers comparable to R1 which is an MoE as much as 20x larger.
+
+image.png
+
+It's still early so no independent checks available yet, but the Qwen team have done the bare essentials to reassure us that they have not simply overfit to benchmarks in order to get this result - in that they boast decent non-math/coding benchmark numbers still, and gave us one paragraph on how:
+
+In the initial stage, we scale RL specifically for math and coding tasks. Rather than relying on traditional reward models, we utilized an accuracy verifier for math problems to ensure the correctness of final solutions and a code execution server to assess whether the generated codes successfully pass predefined test cases. As training episodes progress, performance in both domains shows continuous improvement.
+After the first stage, we add another stage of RL for general capabilities. It is trained with rewards from general reward model and some rule-based verifiers. We find that this stage of RL training with a small amount of steps can increase the performance of other general capabilities, such as instruction following, alignment with human preference, and agent performance, without significant performance drop in math and coding.
+More information - a paper, sample data, sample code - could help understand, but this is fair enough for a 2025 open model disclosure. It will take a while more for QwQ-32B to rank on the Open LLM Leaderboard but here is where things currently stand, as a reminder that thinking posttrains aren't strictly better than their instruct predecessor.
+
+image.png
+
+The Table of Contents and Channel Summaries have been moved to the web version of this email: [AINews] QwQ-32B claims to match DeepSeek R1-671B!
+
+AI Twitter Recap
+
+AI Model Releases and Benchmarks
+
+GPT-4.5 rollout and performance: @sama announced the rollout of GPT-4.5 to Plus users, staggering access over a few days to manage rate limits and ensure good user experience. @sama later confirmed the rollout had started and would complete in a few days. @OpenAI highlighted it as a "Great day to be a Plus user". @aidan_mclau humorously warned of potential GPU meltdown due to GPT-4.5's "chonkiness". However, initial user feedback on coding performance was mixed, with @scaling01 finding GPT-4.5 unusable for coding in ChatGPT Plus, citing issues with variable definition, function fixing, and laziness in refactoring. @scaling01 reiterated that "GPT-4.5 is unusable for coding". @juberti argued that GPT-4.5 inference costs are comparable to GPT-3 (Davinci) in summer 2022, suggesting compute costs decrease over time. @polynoamial noted GPT-4.5's ability to solve reasoning problems, attributing it to scaling pretraining.
+Qwen QwQ-32B model release: @Alibaba_Qwen announced QwQ-32B, a new 32 billion parameter reasoning model claiming to rival cutting-edge models like DeepSeek-R1. @reach_vb excitedly declared "We are so unfathomably back!" with Qwen QwQ 32B outperforming DeepSeek R1 and OpenAI O1 Mini, available under Apache 2.0 license. @Yuchenj_UW highlighted Qwen QwQ-32B as a small but powerful reasoning model that beats DeepSeek-R1 (671B) and OpenAI o1-mini, and announced its availability on Hyperbolic Labs. @iScienceLuvr also expressed excitement about Qwen team releases, considering them as impressive as DeepSeek. @teortaxesTex noted Qwen's approach of "cold-start" and competing directly with R1.
+AidanBench updates: @aidan_mclau announced aidanbench updates, stating GPT-4.5 is #3 overall and #1 non-reasoner, while Claude-3.7 models scored below newsonnet. @aidan_mclau explained a fix to O1 scores due to misclassified timeouts. @aidan_mclau pointed out the high cost of Chain of Thought (CoT) reasoning, noting complaints about GPT-4.5 cost but not Claude-3.7-thinking. @scaling01 analyzed AidanBench results, suggesting Claude Sonnet 3.5 (new) shows consistent top performance, while GPT-4.5's high score might be due to memorization on a single question.
+Cohere Aya Vision model release: @_akhaliq announced Cohere releases Aya Vision on Hugging Face, highlighting its strong performance in multilingual text generation and image understanding, outperforming models like Qwen2.5-VL 7B, Gemini Flash 1.5 8B, and Llama-3.2 11B Vision.
+Copilot Arena paper: @StringChaos highlighted the Copilot Arena paper, led by @iamwaynechi and @valeriechen_, providing LLM evaluations directly from developers with real-world insights on model rankings, productivity, and impact across domains and languages.
+VisualThinker-R1-Zero: @Yuchenj_UW discussed VisualThinker-R1-Zero, a 2B model achieving multimodal reasoning through Reinforcement Learning (RL) applied directly to the Qwen2-VL-2B base model, reaching 59.47% accuracy on CVBench.
+Light-R1: @_akhaliq announced Light-R1 on Hugging Face, surpassing R1-Distill from Scratch with Curriculum SFT & DPO for $1000.
+Ollama new models: @ollama announced Ollama v0.5.13 with new models including Microsoft Phi 4 mini with function calling, IBM Granite 3.2 Vision for visual document understanding, and Cohere Command R7B Arabic.
+Open Source AI & Community
+
+Weights & Biases acquisition by CoreWeave: @weights_biases announced their acquisition by CoreWeave, an AI hyperscaler. @ClementDelangue praised Weights & Biases as one of the most impactful AI companies and congratulated them on the acquisition by CoreWeave. @iScienceLuvr also highlighted the acquisition as huge news for the AI infra community. @steph_palazzolo reported on the acquisition talks, mentioning a potential $1.7B deal to diversify CoreWeave's customer base into software. @alexandr_wang and @alexandr_wang shared articles covering the acquisition.
+Keras 3.9.0 release: @fchollet announced Keras 3.9.0 release with new ops, image augmentation layers, bug fixes, performance improvements, and a new rematerialization API.
+Llamba models: @awnihannun promoted Llamba models from Cartesia, high-quality 1B, 3B, and 7B SSMs with MLX support for fast on-device execution.
+Hugging Face integration: @_akhaliq announced a Hugging Face update allowing developers to deploy models directly from Hugging Face with Gradio, choosing inference providers and requiring user login for billing. @sarahookr mentioned partnering with Hugging Face for the release of Aya Vision.
+AI Applications & Use Cases
+
+Google AI Mode in Search: @Google introduced AI Mode in Search, an experiment offering AI responses and follow-up questions. @Google detailed AI Mode expanding on AI Overviews with advanced reasoning and multimodal capabilities, rolling out to Google One AI Premium subscribers. @Google also announced Gemini 2.0 in AI Overviews for complex questions like coding and math, and open access to AI Overviews without sign-in. @jack_w_rae congratulated the Search team on the AI Mode launch, anticipating its utility for a wider audience. @OriolVinyalsML highlighted Gemini's integration with Search through AI Mode.
+AI agents and agentic workflows: @llama_index promoted Agentic Document Workflows integrating into software processes for knowledge agents. @DeepLearningAI and @AndrewYNg announced a new short course on Event-Driven Agentic Document Workflows in partnership with LlamaIndex, teaching how to build agents for form processing and document automation. @LangChainAI announced Interrupt, an upcoming AI agent conference featuring @benjaminliebald from Harvey AI on building legal copilots. @omarsar0 shared thoughts on building AI agents, suggesting hooking up APIs to LLMs or using agentic frameworks, claiming it's not hard to achieve decent agent performance.
+Perplexity AI features: @perplexity_ai announced a new voice mode for the Perplexity macOS app. @AravSrinivas noted Ask Perplexity's 12M impressions in less than a week.
+Google Shopping AI features: @Google introduced new AI features on Google Shopping for fashion and beauty, including AI-generated image-based recommendations, virtual try-ons, and AR makeup inspiration.
+Android AI-powered features: @Google highlighted new AI-powered features in Android, along with safety tools and connectivity improvements.
+Function Calling Guide for Gemini 2.0: @_philschmid announced an end-to-end function calling guide for Google Gemini 2.0 Flash, covering setup, JSON schema, Python SDK, LangChain integration, and OpenAI compatible API.
+AI Infrastructure & Compute
+
+Mac Studio with 512GB RAM: @awnihannun highlighted the new Mac Studio with 512GB RAM, noting it can fit 4-bit Deep Seek R1 with spare capacity. @cognitivecompai reacted to the 512GB RAM option with "Shut up and take my money!".
+MLX and LM Studio on Mac: @reach_vb noted MLX and LMStudio's highlight in the M3 Ultra announcement as surreal. @awnihannun also pointed out MLX + LM Studio featured on the new Mac Studio product page. @reach_vb shared a positive experience with llama.cpp and MLX on MPS, contrasting it with torch.
+Compute efficiency and scaling: @omarsar0 discussed approaches to improve reasoning model efficiency, mentioning clever inference methods and UPFT (efficient training with reduced tokens). @omarsar0 shared a paper on reducing LLM fine-tuning costs by 75% while maintaining reasoning performance using "A Few Tokens Are All You Need" approach. @jxmnop highlighted dataset distillation's efficiency, achieving 94% accuracy on MNIST by training on only ten images.
+OpenCL's missed opportunity in AI compute: @clattner_llvm reflected on OpenCL as the tech that "should have" won AI compute, sharing lessons learned from its failure.
+AI Safety & Policy
+
+Superintelligence strategy and AI safety: @DanHendrycks with @ericschmidt and @alexandr_wang proposed a new strategy for superintelligence, arguing it is destabilizing and calling for a strategy of deterrence (MAIM), competitiveness, and nonproliferation. @DanHendrycks introduced Mutual Assured AI Malfunction (MAIM) as a deterrence regime for destabilizing AI projects, drawing parallels to nuclear MAD. @DanHendrycks warned against a US AI Manhattan Project for superintelligence, as it could cause escalation and provoke deterrence from states like China. @DanHendrycks emphasized nonproliferation of catastrophic AI capabilities to rogue actors, suggesting tracking AI chips and preventing smuggling. @DanHendrycks highlighted AI chip supply chain security and domestic manufacturing as critical for competitiveness, given the risk of China invading Taiwan. @DanHendrycks drew parallels to Cold War policy for addressing AI's problems. @saranormous promoted a NoPriorsPod episode on this national security strategy with @DanHendrycks, @alexandr_wang, and @ericschmidt. @Yoshua_Bengio supported Sutton and Barto's Turing Award and emphasized the irresponsibility of releasing models without safeguards. @denny_zhou quoted advice to prioritize ambition in AI research over privacy, explainability, or safety.
+Geopolitics and AI competition: @NandoDF raised the question of whether China or USA is perceived as an authoritarian government potentially unfettered in AI development. @teortaxesTex noted escalating tensions and a shift away from conciliatory approaches in China's rhetoric. @teortaxesTex highlighted the presence of transgender individuals in top Chinese AI teams as a sign of China's human capital competitiveness. @RichardMCNgo discussed the implications of AI progress on deindustrialization and the nature of work, suggesting a preference for "real" manufacturing jobs grounded in local contexts over abstract roles. @hardmaru believes geopolitics and de-globalization will shape the world in the next decade.
+AI control and safety research: @NeelNanda5 expressed excitement about AI control becoming a real research field with its first conference.
+Disinformation and truth in the attention economy: @ReamBraden observed the staggering amount of disinformation on X, arguing that the incentives of the attention economy are incompatible with "free speech" and that new incentives are needed for truth online.
+Memes & Humor
+
+GPT-4.5 "chonkiness" and GPU melting: @aidan_mclau warned "psa: gpt-4.5 is coming to plus our gpus may melt so bear with us!". @aidan_mclau posted "live footage of our supercomputers serving chonk". @aidan_mclau joked "yeah well ur model so fat it rolled itself out". @stevenheidel sent "thoughts and prayers for our GPUs as we roll out gpt-4.5".
+GPT-4.5 greentext memes: @SebastienBubeck mentioned GPT-4.5 being available to pro users for "finish the green text" memes. @iScienceLuvr and @iScienceLuvr admitted to being "wirehacked" and "embarrassed" by hilarious GPT-4.5 generated greentexts about themselves.
+ChatGPT UltraChonk 7 High cost: @andersonbcdefg joked about the future cost of ChatGPT UltraChonk 7 High, comparing 1.5 weeks of access to $800k inheritance or 2 dozen eggs in 2028.
+Movie opinions and Aidan Moviebench: @aidan_mclau declared "inception is actually the best movie humanity has ever made" as "the o1 of aidan moviebench". @aidan_mclau stated "the only good christopher nolan movies are inception and the dark knight".
+AI Reddit Recap
+
+/r/LocalLlama Recap
+
+Theme 1. Apple's Mac Studio with M3 Ultra for AI-Inference and 512GB Unified Memory
+
+Apple releases new Mac Studio with M4 Max and M3 Ultra, and up to 512GB unified memory (Score: 422, Comments: 290): Apple has released a new Mac Studio featuring the M4 Max and M3 Ultra chips, offering up to 512GB unified memory.
+Discussions centered around memory bandwidth and cost emphasize the challenges of achieving high bandwidth with DDR5 and AMD Turin, with 106GB/s per CCD and a need for 5x CCD to surpass 500GB/s. Comparisons highlight the EPYC 9355P at $2998 and the high cost of server RAM, questioning the affordability of Apple's offerings.
+Users express interest in the practical applications and performance of the new Mac Studio, particularly for AI inference tasks like running Unsloth DeepSeek R1 and LLM token generation. The 512GB model is seen as a viable option for local R1 hosting, despite its high price, and comparisons are made to setups like 8 RTX 3090s.
+The pricing and configuration of the Mac Studio are heavily scrutinized, with the 512GB variant priced at €11k in Italy and $9.5k in the US. The education discount reduces this to ~$8.6k, and the M4 Max is noted for its 546GB/s memory bandwidth, positioning it as a competitor to Nvidia Digits.
+The new king? M3 Ultra, 80 Core GPU, 512GB Memory (Score: 207, Comments: 141): The post discusses the Apple M3 Ultra with a 32-core CPU, 80-core GPU, and 512GB of unified memory, which opens up significant possibilities for computing power. The base price is $9,499, with options for customization and pre-order, highlighting the model's potential impact on high-performance computing.
+Thunderbolt Networking & Asahi Linux: Users discuss macOS's automatic setup for Thunderbolt networking, noting its previous limitations at 10Gbps with TB3/4, while Asahi Linux currently supports some Apple Silicon chips but not the M3. Some users tried Asahi on M2 chips but found it lacking, appreciating the team's efforts despite preferring macOS.
+Comparison with NVIDIA and Cost Efficiency: The M3 Ultra's lack of CUDA is seen as a downside for training and image generation, with some users noting the Mac's slower performance with larger prompts. The cost of the M3 Ultra is compared to NVIDIA GPUs, with discussions highlighting its power efficiency (480W vs. 5kW for equivalent GPUs) and the challenges of comparing GPU to CPU inference.
+Pricing and Value Perception: The M3 Ultra's price point is debated, with some users considering it a good deal due to its 512GB of unified memory and efficiency, while others argue it's overpriced compared to NVIDIA GPUs. The device is contrasted with 80GB H100 and Blackwell Quadro, emphasizing its value in memory capacity and bandwidth despite a higher initial cost.
+Mac Studio just got 512GB of memory! (Score: 106, Comments: 76): The Mac Studio now features 512GB of memory and 4TB storage with a memory bandwidth of 819 GB/s for $10,499 in the US. This configuration is potentially capable of running Llama 3.1 405B at 8 tps.
+Discussions highlight the cost-effectiveness of the Mac Studio compared to other high-performance setups, such as a Nvidia GH200 624GB system costing $44,000. Users debate the practicality of the $10,499 price tag, with some noting that it offers a competitive alternative to other expensive hardware configurations.
+Users discuss the technical capabilities of the Mac Studio, particularly its ability to run models like Deepseek-r1 672B with 70,000+ context using tools like the VRAM Calculator. There's debate over its suitability for running large models with small context sizes and the potential of clustering multiple units for higher performance.
+Conversations touch on the limitations of Mac systems for certain tasks, such as training models, and the challenges of achieving similar memory bandwidth with custom-built systems. Some users note the need for advanced configurations, like using Threadripper or EPYC systems, to match the Mac Studio's performance, while others suggest networking multiple Macs for increased RAM.
+Theme 2. Qwen/QwQ-32B Launch: Performance Comparisons and Benchmarks
+
+Qwen/QwQ-32B · Hugging Face (Score: 169, Comments: 55): Qwen/QwQ-32B is a model available on Hugging Face, but the post does not provide any specific details or context about it.
+Qwen/QwQ-32B is generating significant excitement as users express that it may outperform R1 and potentially be the best 32B model to date. Some users speculate it could rival much larger models, with mentions of it being better than a 671B model and suggesting a combination with QwQ 32B coder would be powerful.
+Users discuss performance and implementation details, with some preferring Bartowski's GGUFs over the official releases, while others are impressed by the model's capabilities in specific use cases like roleplay and fiction. The model's availability on Hugging Face and its potential to run efficiently on existing hardware like a 3090 GPU are highlighted.
+There is speculation about the broader impact on the tech industry, with some suggesting that if the model gains traction, it could affect companies like Nvidia. However, others argue that demand for self-hosting could benefit Nvidia by expanding its customer base.
+Are we ready! (Score: 567, Comments: 77): Junyang Lin announced the completion of the final training of QwQ-32B via a tweet on March 5, 2025, which garnered 151 likes and other interactions. The tweet included a fish emoji and was posted from a verified account, indicating the significance of this development in AI training milestones.
+QwQ-32B Release and Performance: There is anticipation for the release of QwQ-32B, with comments highlighting its expected superior performance compared to the QwQ-Preview and previous models like Qwen-32B. The model is anticipated to be a significant improvement, potentially outperforming Mistral Large and Qwen-72B, with some users able to run it on consumer GPUs.
+Live Demo and Comparisons: A live demo is available on Hugging Face at this link. Discussions compare QwQ-Preview favorably against R1-distill-qwen-32B, suggesting that the new model could surpass DeepSeek R1 in performance, with improved reasoning and tool use capabilities.
+Community Reactions and Expectations: Users express excitement and expectations for the new model, with some humorously considering creating their own AI named "UwU", which already exists based on QwQ. There are discussions on the potential for QwQ-32B to perform better than r1 distilled qwen 32B, indicating high community interest and competitive benchmarking.
+Theme 3. llama.cpp's Versatility in Leveraging Local LLMs
+
+llama.cpp is all you need (Score: 356, Comments: 122): The author explored locally-hosted LLMs starting with ollama, which uses llama.cpp, but faced issues with ROCm backend compilation on Linux for an unsupported AMD card. After unsuccessful attempts with koboldcpp, they found success with llama.cpp's vulkan version. They praise llama-server for its clean web-UI, API endpoint, and extensive tunability, concluding that llama.cpp is comprehensive for their needs.
+Llama.cpp is praised for its capabilities and ease of use, but concerns about performance and multimodal support are noted. Users mention that llama.cpp has given up on multimodal support, whereas alternatives like mistral.rs support recent models and provide features like in-situ quantization and paged attention. Some users prefer koboldcpp for its versatility across different hardware.
+The llama-server web interface receives positive feedback for its simplicity and clean design, contrasting with other UIs like openweb-ui which are seen as more complex. Llama-swap is highlighted as a valuable tool for managing multiple models and configurations, enabling efficient model hot-swapping.
+Performance issues with llama.cpp are discussed, particularly in scenarios with concurrent users and VRAM management. Some users report better results with exllamav2 and TabbyAPI, which offer enhanced context length and KV cache compression capabilities.
+Ollama v0.5.13 has been released (Score: 139, Comments: 19): Ollama v0.5.13 has been released. No additional details or context about the release are provided in the post.
+Ollama v0.5.13 release discussions revolve around model compatibility and integration, with users expressing challenges in using the new version, particularly with qwen2.5vl and its multimodal capabilities. One user noted issues with the llama runner process on Windows, referencing a GitHub issue.
+There is curiosity about Ollama's ability to accept requests from Visual Studio Code and Cursor, indicating a potential new feature for handling requests from origins starting with vscode-file://.
+The conversation around Phi-4 multimodal support highlights delays due to the complexity of implementing LoRA for multimodal models, with llama.cpp currently not supporting minicpm-o2.6 and putting multimodal developments on hold.
+Other AI Subreddit Recap
+
+/r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding
+
+Theme 1. TeaCache Enhancement Boosts WAN 2.1 Performance
+
+Ok I don't like it when it pretends to be a person and talking about going to school (Score: 120, Comments: 63): The post discusses a math problem involving the calculation of "130 plus 100 multiplied by 5", emphasizing the importance of remembering the order of operations, specifically multiplication before addition, as taught in "math class." The image uses a conversational tone with highlighted phrases to engage the reader.
+Discussions emphasize that AI models like ChatGPT are not designed for simple calculations like "130 plus 100 multiplied by 5." Users argue against using reasoning models for such tasks due to inefficiency and potential errors, suggesting traditional calculators as more reliable and energy-efficient alternatives.
+The conversation highlights a common misunderstanding of Large Language Models (LLMs), with users noting that LLMs function as knowledge retrieval tools rather than true reasoning entities. Some users express frustration over the average person's misconceptions about LLM capabilities and their limitations in creativity and problem-solving.
+Humor and sarcasm are prevalent in the comments, with users joking about AI's presence in math class and its anthropomorphic portrayal. There’s a playful tone in imagining AI as a classmate, referencing PEMDAS knowledge from school textbooks, and reminiscing about AI's "parents" as Jewish immigrants from Hungary.
+Official Teacache for Wan 2.1 arrived. Some said he got 100% speed boost but I haven't tested myself yet. (Score: 108, Comments: 41): TeaCache now supports Wan 2.1, with some users claiming a 100% speed boost. Enthusiastic responses in the community, such as from FurkanGozukara, highlight excitement and collaboration in testing these new features on GitHub.
+Users discuss the installation challenges with TeaCache, specifically issues with Python and Torch version mismatches. Solutions include using pip to install Torch nightly and ensuring the correct environment is activated with "source activate" before installations.
+There is interest in understanding the differences between TeaCache and Kijai’s node. Kijai updated his wrapper to include the new TeaCache features, estimating coefficients with step skips until the official release for comparison.
+Performance improvements are noted, with users like _raydeStar reporting significant speed increases using sage attention and sparge_attn, achieving a time reduction from 34.91s/it to 11.89s/it during tests. However, some users experience artifacts and are seeking optimal settings for quality rendering.
+Theme 2. Lightricks LTX-Video v0.9.5 Adds Keyframes and Extensions
+
+LTX-Video v0.9.5 released, now with keyframes, video extension, and higher resolutions support. (Score: 184, Comments: 53): LTX-Video v0.9.5 has been released, featuring new capabilities such as keyframes, video extension, and support for higher resolutions.
+Keyframe Feature and Interpolation: Users are excited about the keyframe feature, noting its potential as a game changer for open-source models. Frame Conditioning and Sequence Conditioning are highlighted as new capabilities for frame interpolation and video extension, with users eager to see demos of these features (GitHub repo).
+Hardware and Performance: Discussions reveal that LTX-Video is relatively small with 2B parameters, running on 6GB vRAM. Users appreciate the model's size compared to others, though balancing resources, generation time, and quality remains a challenge.
+Workflows and Examples: The community shares resources for deploying and using LTX-Video, including a RunPod template with ComfyUI for workflows like i2v and t2v. Example workflows and additional resources are shared, emphasizing the need for updates to utilize new features (ComfyUI examples).
+Theme 3. Open-Source Development of Chroma Model Released
+
+Chroma: Open-Source, Uncensored, and Built for the Community - [WIP] (Score: 381, Comments: 117): Chroma is an 8.9B parameter model based on FLUX.1-schnell, fully Apache 2.0 licensed for open-source use and modification, currently in training. The model is trained on a 5M dataset from 20M samples, focusing on uncensored content and is supported by resources such as a Hugging Face repo and live WandB training logs.
+Dataset Sufficiency: Concerns were raised about the 5M dataset being potentially insufficient for a universal model, with comparisons to booru dumps which can reach 3M images. Questions about dataset content, including whether it includes celebrities and specific labeling for sfw/nsfw content, were also discussed.
+Technical Optimizations and Licensing: The Chroma model has undergone significant optimizations, allowing for faster training speeds (~18img/s on 8xh100 nodes), with 50 epochs recommended for strong convergence. The project's Apache 2.0 license was highlighted, but challenges in open-sourcing the dataset due to legal ambiguities were noted.
+Model Comparisons and Legal Concerns: Discussions included comparisons with other models like SDXL and SD 3.5 Medium, with some users expressing excitement about overcoming challenges in training Flux models. Legal concerns about copyright infringement when training on large datasets were also mentioned, emphasizing potential legal risks.
+Theme 4. GPT-4.5 Rolls Out to Plus Users with Memory Capabilities
+
+4.5 Rolling out to Plus users (Score: 394, Comments: 144): OpenAI announced the rollout of GPT-4.5 to Plus users, as indicated by a Twitter post. The image highlights an informal conversation revealing the update, accompanied by emoji reactions, emphasizing the excitement for the new release.
+Users express skepticism about GPT-4.5's self-awareness and ability to provide accurate information, with some reporting instances where the model denied its own existence. OpenAI has not clearly communicated usage limits, leading to confusion among users about the 50 messages/week cap and the timing of resets.
+There's a mix of excitement and frustration regarding the rollout, particularly about the rate limits and lack of clarity on features like improved memory. Some users report having access on both iOS and browser, with it being labeled as a "Research Preview."
+OpenAI mentioned that the rollout to Plus users would take 1-3 days, and rate limits might change as demand is assessed. Users are still awaiting further updates on limits and features, with a notable interest in potential advanced voice mode updates.
+Confirmed by openAI employee, the rate limit of GPT 4.5 for plus users is 50 messages / week (Score: 148, Comments: 61): Aidan McLaughlin confirms that GPT-4.5 limits Plus users to 50 messages per week, with potential variations based on usage. He humorously claims each GPT-4.5 token uses as much energy as Italy annually, and the tweet has garnered significant attention with 9,600 views as of March 5, 2025.
+The statement about GPT-4.5's energy consumption is widely recognized as a humorous exaggeration, with users noting it lacks logical coherence. Aidan McLaughlin's tweet is interpreted as a joke, mocking exaggerated claims about AI energy use, with comparisons like the entire energy consumption of Italy being used for a single token seen as absurd.
+Discussion highlights the massive scale of GPT-4.5, with speculation about its parameters exceeding 10 trillion. Users express curiosity about the model's size and architecture, noting that OpenAI has not disclosed specific data about the number of parameters or energy consumption.
+Commenters humorously engage with the absurdity of the energy consumption claim, using humor and satire to critique the statement. This includes jokes about using Dyson spheres in the future and playful references to non-metric units like "female Canadian hobos fighting over a sandwich."
+GPT-4.5 is officially rolling out to Plus users! (Score: 165, Comments: 56): GPT-4.5 is now accessible to Plus users in a research preview, described as suitable for writing and exploring ideas. The interface also lists GPT-4o and a beta version of GPT-4o with scheduled tasks for follow-up queries, all within a modern dark-themed UI.
+Users are discussing the memory feature in GPT-4.5, with one commenter confirming its presence, contrasting with other models that lack this feature. This addition is appreciated as it enhances the model's capabilities.
+There is significant interest in understanding the limits for Plus users, with questions about the number of messages allowed per day or week. One user reported having a conversation with more than 20 messages, and another mentioned a 50-message cap that might be adjusted based on demand.
+Some users expressed disappointment with GPT-4.5, feeling it does not significantly differentiate itself from competitors, while others are curious if there are specific tasks where GPT-4.5 excels compared to other models.
+AI Discord Recap
+
+A summary of Summaries of Summaries by o1-preview-2024-09-12
+
+Theme 1: Alibaba's QwQ-32B Challenges the Titans
+
+QwQ-32B Punches Above Its Weight Against DeepSeek-R1: Alibaba's QwQ-32B, a 32-billion-parameter model, rivals the 671-billion-parameter DeepSeek-R1, showcasing the power of Reinforcement Learning (RL) scaling. The model excels in math and coding tasks, proving that size isn't everything.
+Community Eagerly Tests QwQ-32B's Might: Users are putting QwQ-32B through its paces, accessing it on Hugging Face and Qwen Chat. Early impressions suggest it matches larger models in performance, sparking excitement.
+QwQ-32B Adopts Hermes' Secret Sauce: Observers note QwQ-32B uses special tokens and formatting similar to Hermes, including , , and tool-calling syntax. This enhances compatibility with advanced prompting techniques.
+Theme 2: User Frustrations Boil Over AI Tool Shortcomings
+
+Cursor's 3.7 Model 'Dumbs Down', Users Jump Ship: Developers report Cursor's 3.7 model feels nerfed, generating unwanted readme files and misusing abstractions. A satirical Cursor Dumbness Meter mocks the decline, prompting many to consider Windsurf as an alternative.
+Claude Sonnet 3.7 Fumbles Simple Tasks: Users express disappointment with Claude Sonnet 3.7 on Perplexity, citing hallucinations in parsing JSON files and inferior performance compared to direct use via Anthropic. Frustrations mount over its "claimed improvements" not materializing.
+GPT-4.5 Teases with Limits and Refusals: OpenAI's GPT-4.5 release excites users but restricts them to 50 uses per week. It refuses to engage with story-based prompts, even when compliant with guidelines, leaving users exasperated.
+Theme 3: AI Agents Aim High with Sky-High Price Tags
+
+OpenAI Plans to Charge Up to $20K/Month for Elite Agents: OpenAI is gearing up to sell advanced AI agents, with subscriptions ranging from $2,000 to $20,000 per month, targeting tasks like coding automation and PhD-level research. The hefty price tag raises eyebrows and skepticism among users.
+LlamaIndex Partners with DeepLearningAI for Agentic Workflows: LlamaIndex teams up with DeepLearningAI to offer a course on building Agentic Document Workflows, integrating AI agents seamlessly into software processes. This initiative underlines the increasing importance of agents in AI development.
+Composio Simplifies MCP with Turnkey Authentication: Composio now supports MCP with robust authentication, eliminating the hassle of setting up MCP servers for apps like Slack and Notion. Their announcement boasts improved tool-calling accuracy and ease of use.
+Theme 4: Reinforcement Learning Plays and Wins Big Time
+
+RL Agent Conquers Pokémon Red with Tiny Model: A reinforcement learning system beats Pokémon Red using a policy under 10 million parameters and PPO, showcasing RL's prowess in complex tasks. The feat highlights RL's resurgence and potential in gaming AI.
+AI Tackles Bullet Hell: Training Bots for Touhou: Enthusiasts are training AI models to play Touhou, using RL with game scores as rewards. They're exploring simulators like Starcraft gym to see if RL can master notoriously difficult games.
+RL Scaling Turns Medium Models into Giants: The success of QwQ-32B demonstrates that scaling RL training boosts model performance significantly. Continuous RL scaling allows medium-sized models to compete with massive ones, especially in math and coding abilities.
+Theme 5: Techies React to New Hardware Unveilings
+
+Apple Launches M4 MacBook Air in Sky Blue, Techies Split: Apple's new MacBook Air with the M4 chip and Sky Blue color starts at $999. While some are thrilled about the Apple Intelligence features, others grumble about specs, saying "why I don't buy Macs..."
+Thunderbolt 5 Promises Supercharged Data Speeds: Thunderbolt 5 boasts 120Gb/s unidirectional speeds, exciting users about enhanced data transfer for distributed training. It's seen as potentially outpacing the RTX 3090 SLI bridge and opening doors for Mac-based setups.
+AMD's RX 9070 XT Goes Toe-to-Toe with Nvidia: Reviews of the AMD RX 9070 XT GPU show it competing closely with Nvidia's 5070 Ti in rasterization. Priced at 80% of the 5070 Ti's $750 MSRP, it's praised as a cost-effective powerhouse.
+PART 1: High level Discord summaries
+
+Cursor IDE Discord
+
+Cursor's 3.7 Model Performance Questioned: Members are reporting that Cursor's 3.7 model feels nerfed, citing instances where it generates readme files without prompting and overuses Class A abstractions.
+Some users suspect Cursor is either using a big prompt or fake 3.7 models, and one member shared a scientific measurement of how dumb Cursor editor is feeling today.
+Community Satirizes Cursor's Dumbness: A member shared a link to a "highly sophisticated meter" that measures the "dumbness level" of Cursor editor.
+The meter uses "advanced algorithms" based on "cosmic rays, keyboard mishaps, and the number of times it completes your code incorrectly," sparking humorous reactions in the community.
+YOLO Mode Suffers After Updates: After an update, YOLO mode in Cursor isn't working properly, as it now requires approval before running commands, even with an empty allow list.
+One user expressed frustration, stating that they want the AI assistant to have as much agency as possible and rely on Git for incorrect removals, preferring the v45 behavior that saved them hours.
+Windsurf Alternative Gains Traction: Community members are actively discussing Windsurf's new release, Wave 4, some considering switching due to perceived advantages in the agent's capabilities, with some sharing a youtube tutorial on "Vibe Coding Tutorial and Best Practices (Cursor / Windsurf)".
+Despite the interest, concerns about Windsurf's pricing model are present, and some users mentioned it yoinks continue.dev.
+OpenAI Prepares Premium Tier: A member shared a report that OpenAI is doubling down on its application business, planning to offer subscriptions ranging from $2K to $20K/month for advanced agents capable of automating coding and PhD-level research.
+This news triggered skepticism, with some questioning whether the high price is justified, especially given the current output quality of AI models.
+OpenAI Discord
+
+OpenAI Ships GPT-4.5: OpenAI released GPT-4.5 ahead of schedule, however is limited to 50 uses per week, and is not a replacement for GPT-4o.
+Reports indicate that GPT-4.5 is refusing story-based prompts and will gradually increase usage.
+OpenAI Iterates on AGI: OpenAI views AGI development as a continuous path rather than a sudden leap, focusing on iteratively deploying and learning from today's models to make future AI safer and more beneficial.
+Their approach to AI safety and alignment is guided by embracing uncertainty, defense in depth, methods that scale, human control, and community efforts to ensure that AGI benefits all of humanity.
+Speculation on OpenAI's O3: Members speculate on the release of O3, noting that OpenAI stated they won't release the full O3 in ChatGPT, only in the API.
+The tone of voice indicates that it is still an AI and therefore won't always be 100% accurate and that one should always consult a human therapist or doctor.
+Qwen-14B Powers Recursive Summarization: Members are using the Qwen-14B model for recursive summarization tasks and find the output better than Gemini.
+An example was given of summarization of a chess book with results of the Qwen-14B being better than Gemini, which was performing like GPT-3.5.
+Surveying Prompt Engineering: A member shared a systematic survey of prompt engineering in Large Language Models titled A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications outlining key strategies like Zero-Shot Prompting, Few-Shot Prompting, and Chain-of-Thought (CoT) prompting and the ChatGPT link to access it.
+However, discussion highlighted the survey's detailed description of each technique, while noting omissions such as Self-Discover and MedPrompt.
+Codeium (Windsurf) Discord
+
+Windsurf's Wave 4: Windfalls and Wobbles: Windsurf launched Wave 4 (blog post) including Previews, Tab-to-import, Linter integration, Suggested actions, MCP discoverability, and improvements to Claude 3.7.
+Some users reported issues like never-ending loops and high credit consumption, while others praised the speed and Claude 3.7 integration, accessible via Windsurf Command (CTRL/Cmd + I)
+Credential Catastrophe Cripples Codeium: Multiple users reported being unable to log in to codeium.com using Google or email/password.
+The team acknowledged the login issues and provided a status page for updates.
+Credit Crunch Consumes Codeium Consumers: Users voiced concerns about rapid credit usage, especially with Claude 3.7, even post-improvements.
+The team clarified that Flex Credits roll over, and automatic lint error fixes are free, but others are still struggling with credits and tool calls.
+Windsurf's Workflow Wonders with Wave 4: A YouTube video covers the Windsurf Wave 4 updates, demonstrating Preview, Tab to Import, and Suggested Actions.
+The new Tab-to-import feature automatically adds imports with a tab press, enhancing workflow within Cascade.
+Windsurf's Wishlist: Wanted Webview and Waived Limits: Users requested features like external library documentation support, increased credit limits, adjustable chat font size, and a proper webview in the sidebar like Trae, and Firecrawl for generating llms.txt files.
+A user suggested using Firecrawl to generate an llms.txt file for websites to feed into the LLM.
+aider (Paul Gauthier) Discord
+
+Qwen Releases QwQ-32B Reasoning Model: Qwen launched QwQ-32B, a 32B parameter reasoning model, compared favorably to DeepSeek-R1, as discussed in a VXReddit post and in their blog.
+Enthusiasts are eager to test its performance as an architect and coder with Aider integration, and its availability at HF and ModelScope was mentioned.
+Offline Aider Installation Made Possible: Users seeking to install Aider on an offline PC overcame challenges by using pip download to transfer Python packages from an online machine to an offline virtual environment.
+A successful sequence involves: python -m pip download --dest=aider_installer aider-chat.
+Achieving OWUI Harmony with OAI-Compatible Aider: To use Aider with OpenWebUI (OWUI), a member recommended to prefix the model name with openai/ to signal an OAI-compatible endpoint, such as openai/myowui-openrouter.openai/gpt-4o-mini.
+This approach bypasses litellm.BadRequestError issues when connecting Aider to OWUI.
+ParaSail Claims Rapid R1 Throughput: A user reported 300tps on R1 using the Parasail provider via OpenRouter.
+While replication proved difficult, Parasail was noted as a top performer for R1 alongside SambaNova.
+Crafting commit messages with Aider: Members discussed methods to get aider to write commit messages for staged files, suggesting git stash save --keep-index, then /commit, and finally git stash pop.
+Another suggested using aider --commit which writes the commit message, commits, and exits, and consult the Git integration docs.
+LM Studio Discord
+
+Watch your VRAM Overflow: A member described how to detect VRAM overflow in LM Studio by monitoring Dedicated memory and Shared memory usage, providing an image illustrating the issue.
+They noted that overflow occurs when Dedicated memory is high and Shared memory increases.
+No Audio Support for Multi-Modal Phi-4: Members confirmed that multi-modal Phi-4 and audio support are not currently available in LM Studio due to limitations in llama.cpp.
+There are currently no workarounds for the missing support.
+VRAM, Context and KV Cache On Lock: A member noted that context size and KV cache settings significantly impact VRAM usage, recommending aiming for 90% VRAM utilization to optimize performance.
+Another member explained the KV cache as the value of K and V when the computer is doing the attention mechanics math.
+Sesame AI's TTS: Open Source or Smoke?: Members discussed Sesame AI's conversational speech generation model (CSM), and one member praised its lifelike qualities, linking to a demo.
+Others expressed skepticism about its open-source claim, noting the GitHub repository lacks code commits.
+M3 Ultra and M4 Max Mac Studio Announced: Apple announced the new Mac Studio powered by M3 Ultra (maxing out at 512GB ram) and M4 Max (maxing out at 128GB).
+A member reacted negatively to the RAM specs, stating why I don't buy macs....
+Interconnects (Nathan Lambert) Discord
+
+Sutton Sparks Safety Debate!: Turing Award winner Richard Sutton's recent interview stating that safety is fake news has ignited discussion.
+Responses varied, with one member commenting Rich is morally kind of sus I wouldn’t take his research advice even if his output is prodigal.
+OpenAI Agent Pricing: $20K/Month?: According to The Information, OpenAI plans to charge $2,000 to $20,000 per month for AI agents designed for tasks such as automating coding and PhD-level research.
+SoftBank, an OpenAl investor, has committed to spending $3 billion on OpenAl's agent products this year alone.
+Alibaba's QwQ-32B Model Rivals DeepSeek: Alibaba Qwen released QwQ-32B, a 32 billion parameter reasoning model, that is competing with models like DeepSeek-R1.
+The model uses RL training and post training which improves performance especially in math and coding.
+DeepMind's Exodus to Anthropic Continues: Nicholas Carlini announced his departure from Google DeepMind to join Anthropic, citing that his research on adversarial machine learning is no longer supported at DeepMind according to his blog.
+Members noted GDM lost so many important people lately, while others said that Anthropic mandate of heaven stocks up.
+RL beats Pokemon Red: A reinforcement learning system beat Pokémon Red using a policy under 10M parameters, PPO, and novel techniques, detailed in a blog post.
+The system successfully completes the game, showcasing the resurgence of RL in solving complex tasks.
+GPU MODE Discord
+
+Touhou AI Model Ascends: A member is training an AI model to play Touhou, using RL and the game score as the reward, considering simulators like Starcraft gym and Minetest gym.
+The goal is to determine if RL and reward functions can be used to learn game playing.
+Thunderbolt 5 Speeds Data Transfer: Members are excited about Thunderbolt 5, which could make distributed inference/training between Mac Minis/Studios more viable.
+The unidirectional speed (120gb/s) appears faster than an RTX 3090 SLI bridge (112.5gb/s).
+CUDA Compiler Gets Too Smart: The CUDA compiler optimizes away memory writes when the written data is never read, leading to no error being reported until a read is added.
+This optimization can mislead developers debugging memory write operations, as the absence of errors may not indicate correct behavior until read operations are involved.
+TileLang Struggles with CUDA 12.4/12.6: Users report mismatched elements when performing matmul on CUDA 12.4/12.6 in TileLang, prompting a bug report on GitHub.
+The code functions correctly on CUDA 12.1, and exhibits an AssertionError concerning tensor-like discrepancies.
+QwQ-32B gives larger models a run for their money: Alibaba released QwQ-32B, a new reasoning model with only 32 billion parameters, rivaling models like DeepSeek-R1.
+The model is available on HF, ModelScope, Demo and Qwen Chat.
+Perplexity AI Discord
+
+Google Search Enters AI Chat Arena: Google has announced AI Mode for Search, offering a conversational experience and support for complex queries, currently available as an opt-in experience for some Google One AI Premium subscribers (see AndroidAuthority).
+Some users felt perplexity isn't special anymore as a result of the announcement.
+Claude Sonnet 3.7 Misses the Mark?: A user expressed dissatisfaction with Perplexity's implementation of Claude Sonnet 3.7, finding the results inferior compared to using it directly through Anthropic.
+They added that 3.7 hallucinated errors in a simple json file, questioning the model's claimed improvements.
+Perplexity API Focus Setting Proves Elusive: A user inquired about methods to focus the API on specific topics like academic or community-related content.
+However, no solutions were provided in the messages.
+Sonar Pro Search Model Fails Timeliness Test: A user reported that the Sonar Pro model returns outdated information and faulty links, despite setting the search_recency_filter to 'month'.
+The user wondered if they were misusing the API.
+API Search Cost Remains a Mystery: A user expressed frustration that the API does not provide information on search costs, making it impossible to track spending accurately.
+They lamented that they cannot track their API spendage because the API is not telling them how many searches were used, adding a cry emoji.
+HuggingFace Discord
+
+CoreWeave Files for IPO with 700% Revenue Increase: Cloud provider CoreWeave, which counts on Microsoft for close to two-thirds of its revenue, filed its IPO prospectus, reporting a 700% revenue increase to $1.92 billion in 2024, though with a net loss of $863.4 million.
+Around 77% of revenue came from two customers, primarily Microsoft, and the company holds over $15 billion in unfulfilled contracts.
+Kornia Rust Library opens Internships at Google Summer of Code 2025: The Kornia Rust library is opening internships for the Google Summer of Code 2025 to improve the library, mainly revolving around CV/AI in Rust.
+Interested parties are encouraged to review the documentation and reach out with any questions.
+Umar Jamil shares his journey learning Flash Attention, Triton and CUDA on GPU Mode: Umar Jamil will be on GPU Mode this Saturday, March 8, at noon Pacific, sharing his journey learning Flash Attention, Triton and CUDA.
+It will be an intimate conversation with the audience about his own difficulties along the journey, sharing practical tips on how to teach yourself anything.
+VisionKit is surprisingly NOT Open Source: The model in i-made-this channel uses VisionKit but is not open source, with potential release later down the road, but Deepseek-r1 was surprisingly helpful during development.
+A Medium article discusses building a custom MCP server and mentions CookGPT as an example.
+Agents Course Cert Location Obscure!: Users in the agents-course channel were unable to locate their certificates in the course, specifically in this page, and asked for help.
+A member pointed out that the certificates can be found under "files" and then "certificates" in this dataset, but others have had issues with it not showing.
+MCP (Glama) Discord
+
+Composio Supercharges MCP with Authentication: Composio now supports MCP with authentication, eliminating the need to set up MCP servers for apps like Linear, Slack, Notion, and Calendly.
+Their announcement highlights managed authentication and improved tool calling accuracy.
+WebMCP sparks Security Inferno: The concept of any website acting as an MCP server raised security concerns, especially regarding potential access to local MCP servers.
+Some described it as a security nightmare that would defeat the browser sandbox, while others suggested mitigations like CORS and cross-site configuration.
+Reddit Agent Gets Leads with MCP: A member built a Reddit agent using MCP to generate leads, illustrating MCP's practicality for real-world applications.
+Another member shared Composio's Reddit integration after a query about connecting to Reddit.
+Token Two-Step: Local vs. Per-Site: After setting up the MCP Server, a user clarified the existence of a local token alongside tokens generated per-site and per session for website access.
+The developer verified this process, emphasizing that the tokens are generated per session, per site.
+Insta-Lead-Magic Unveiled: A user showcased an Instagram Lead Scraper complemented by a custom dashboard, featured in a linked video
+No second summary provided.
+Latent Space Discord
+
+Claude Charges Coder a Quarter: A member reported spending $0.26 to ask Claude one question about their small codebase, highlighting concerns about the cost of using Claude for code-related queries.
+A suggestion was made to copy the codebase into a Claude directory and activate the filesystem MCP server on Claude Desktop for free access as a workaround.
+M4 MacBook Air: Sky Blue and AI-Boosted: Apple announced the new MacBook Air featuring the M4 chip, Apple Intelligence capabilities, and a new sky blue color, starting at $999 as noted in this announcement.
+The new MacBook Air boasts up to 18 hours of battery life and a 12MP Center Stage camera.
+Qwen's QwQ-32B: DeepSeek's Reasoning Rival: Qwen released QwQ-32B, a new 32 billion parameter reasoning model that rivals the performance of models like DeepSeek-R1, according to this blog post.
+Trained with RL and continuous scaling, the model excels in math and coding and is available on HuggingFace.
+React: The Surprise Backend Hero for LLMs?: A member suggested React is the best programming model for backend LLM workflows, referencing a blog post on building @gensx_inc with a node.js backend and React-like component model.
+Counterpoints included the suitability of Lisp for easier DSL creation and the mention of Mastra as a no-framework alternative.
+Windsurf's Cascade: Inspect Element No More?: Windsurf released Wave 4, featuring Cascade, which sends element/errors directly to chat, aiming to reduce the need for Inspect Element, with a demo available at this link.
+The update includes previews, Cascade Auto-Linter, MCP UI Improvements, Tab to Import, Suggested Actions, Claude 3.7 Improvements, Referrals, and Windows ARM Support.
+Stability.ai (Stable Diffusion) Discord
+
+SDXL Hands Giving You a Headache?: Users seek methods to automatically fix hands in SDXL without manual inpainting, especially when using 8GB VRAM, discussing embeddings, face detailers, and OpenPose control nets.
+The focus is on finding effective hand LoRAs for SDXL and techniques for automatic correction.
+One-Photo-Turned-Movie?: Users explored creating videos from single photos, recommending the WAN 2.1 i2v model, but noted it demands substantial GPU power and patience.
+While some suggested online services with free credits, the consensus acknowledges that local video generation incurs costs, primarily through electricity consumption.
+SD 3.5 Doesn't Quite Shine: Members reported that SD 3.5 underperformed even flux dev in my tests and nowhere close to larger models like ideogram or imagen.
+However, another member said that Compared to early sd 1.5 they have come a long way.
+Turbocharged SD3.5 Speeds: TensorArt open-sourced SD3.5 Large TurboX, employing 8 sampling steps for a 6x speed boost and better image quality than the official Stable Diffusion 3.5 Turbo, available on Hugging Face.
+They also launched SD3.5 Medium TurboX, utilizing just 4 sampling steps to produce 768x1248 resolution images in 1 second on mid-range GPUs, boasting a 13x speed improvement, also on Hugging Face.
+LlamaIndex Discord
+
+LlamaIndex unveils Agentic Document Workflow Collab: LlamaIndex and DeepLearningAI have partnered to create a course focusing on building Agentic Document Workflows.
+These workflows aim to integrate directly into larger software processes, marking a step forward for knowledge agents.
+ImageBlock Users Encounter OpenAI Glitches: Users reported integration problems with ImageBlock and OpenAI in the latest LlamaIndex, with the system failing to recognize images; A bot suggested checking for the latest versions and ensuring the correct model, such as gpt-4-vision-preview, is in use.
+This issue highlights the intricacies of integrating vision models within existing LlamaIndex workflows.
+Query Fusion Retriever's Citations go Missing: A user found that node post-processing and citation templates were not working with the Query Fusion Retriever, particularly when using reciprocal reranking, in their LlamaIndex setup, and they linked their code for review.
+The de-duplication process in the Query Fusion Retriever might be the cause of losing metadata during node processing.
+Distributed AgentWorkflow Architecture Aspirations: Members discussed a native support for a distributed architecture in AgentWorkflow, where different agents run on different servers/processes.
+The suggested solution involves equipping an agent with tools for making remote calls to a service, rather than relying on built-in distributed architecture support.
+GPT-4o Audio Preview Model Falls Flat: A user reported integration challenges using OpenAI's audio gpt-4o-audio-preview model with LlamaIndex agents, particularly with streaming events.
+It was pointed out that AgentWorkflow automatically calls llm.astream_chat() on chat messages, which might conflict with OpenAI's audio support, suggesting a potential workaround of avoiding AgentWorkflow or disabling LLM streaming.
+Notebook LM Discord
+
+NotebookLM can't break free from Physics Syllabus: A user found that when they uploaded their 180-page physics textbook, the system would not get away from their syllabus by using Gemini.
+This limits the ability to deviate and explore alternative concepts outside the syllabus.
+PDF Uploading Plight: Users are facing challenges with uploading PDFs, finding them nearly unusable, especially with mixed text and image content. Google Docs and Slides seem to do a better job at rendering mixed content.
+Converting PDFs to Google Docs or Slides was suggested as a workaround, however these file formats are proprietary.
+API Access Always Anticipated: A user inquired about the existence of a NotebookLM API or future plans for one, citing numerous workflow optimization use cases for AI Engineers.
+Access to an API would allow users to integrate NotebookLM with other services and automate tasks, like a podcast generator.
+Mobile App Musings: A user inquired about a standalone Android app for NotebookLM, and another user suggested that the web version works fineeeeeee, plus there's a PWA.
+Users discussed the availability of NotebookLM as a Progressive Web App (PWA) that can be installed on phones and PCs, offering a native app-like experience without a dedicated app.
+Podcast Feature Praised: A user lauded Notebook LM's podcast generator as exquisite but wanted to know is there a way to extend the length of the podcast from 17 to 20 mins.
+The podcast feature could be a valuable asset for educators and content creators for lectures.
+Nous Research AI Discord
+
+Gaslight Benchmark Quest Begins: A member inquired about the existence of a gaslight benchmark to compare GPT-4.5 with other models, triggering a response with a link to a satirical benchmark.
+The discussion underscores the community's interest in evaluating models beyond conventional metrics, specifically in areas like deception and persuasion.
+GPT-4.5's Persuasion Gains: A member noted that GPT-4.5's system card suggests significant improvements in persuasion, which are attributed to post-training RL.
+This observation sparked curiosity about startups leveraging post-training RL to enhance model capabilities, indicating a broader trend in AI development.
+Hermes' Special Tokens: The special tokens used in training Hermes models were confirmed to be , , , and .
+This clarification is crucial for developers fine-tuning or integrating Hermes models, ensuring proper formatting and interaction.
+QwQ-32B matches DeepSeek R1: QwQ-32B, a 32 billion parameter model from Qwen, performs at a similar level to DeepSeek-R1, which boasts 671 billion parameters, according to this blogpost.
+The model is accessible via QWEN CHAT, Hugging Face, ModelScope, DEMO, and DISCORD.
+RL Scaling Boosts Model Genius: Reinforcement Learning (RL) scaling elevates model performance beyond typical pretraining, exemplified by DeepSeek R1 through cold-start data and multi-stage training for complex reasoning, as detailed in this blogpost.
+This highlights the growing importance of RL techniques in pushing the boundaries of model capabilities, especially in tasks requiring advanced logical thinking.
+OpenRouter (Alex Atallah) Discord
+
+Taiga App Integrates OpenRouter: An open-source Android chat app called Taiga has been released, which allows users to customize the LLMs they want to use, with OpenRouter pre-integrated.
+The roadmap includes local Speech To Text based on Whisper model and Transformer.js, along with Text To Image support and TTS support based on ChatTTS.
+Prefill Functionality Debated: Members are questioning why prefill is being used in text completion mode, suggesting it's more suited for chat completion as its application to user messages seems illogical.
+One user argued that "prefill makes no sense for user message and they clearly define this as chat completion not text completion lol".
+OpenRouter Documentation Dump Requested: A user requested OpenRouter's documentation as a single, large markdown file for seamless integration with coding agents.
+Another user swiftly provided a full text file of the documentation.
+DeepSeek's Format Hard to Grok: The discussion centered on the ambiguity of DeepSeek's instruct format for multi-turn conversations, with members finding even the tokenizer configuration confusing.
+A user shared the tokenizer config which defines <｜begin of sentence｜> and <｜end of sentence｜> tokens for context.
+LLMGuard Addition Speculated: A member raised the possibility of incorporating addons like LLMGuard for functions like Prompt Injection scanning to LLMs via API within OpenRouter.
+The user linked to LLMGuard and wondered if OpenRouter could handle PII sanitization for improved security.
+Yannick Kilcher Discord
+
+Sparsemax masquerades as Bilevel Max: Members discussed framing Sparsemax as a bilevel optimization (BO) problem, suggesting that the network can dynamically adjust different Neural Network layers, but another member quickly refuted this.
+Instead, they detailed Sparsemax as a projection onto a probability simplex with a closed-form solution, using Lagrangian duality to demonstrate that the computation simplifies to water-filling which can be found in closed form.
+DDP Garbles Weights: PyTorch Bug Hunt: A member reported encountering issues with PyTorch, DDP, and 4 GPUs, where checkpoint reloads resulted in garbled weights on some GPUs during debugging.
+Another suggested ensuring the model is initialized and checkpoints loaded on all GPUs before initializing DDP to mitigate weight garbling.
+Agents Proactively Clarify Text-to-Image Generation: A new paper introduces proactive T2I agents that actively ask clarification questions and present their understanding of user intent as an editable belief graph to address the issue of underspecified user prompts. The paper is called Proactive Agents for Multi-Turn Text-to-Image Generation Under Uncertainty.
+A supplemental video showed that at least 90% of human subjects found these agents and their belief graphs helpful for their T2I workflow.
+QwQ-32B Emerges from Alibaba: Alibaba released QwQ-32B, a new reasoning model with only 32 billion parameters that rivals cutting-edge reasoning models like DeepSeek-R1.
+More information can be found at the Qwen Blog and on their announcement, while Alibaba is scaling RL.
+Cohere Discord
+
+Cohere Enterprise Support Delayed: A member seeking Cohere enterprise deployment assistance was directed to email support, but noted their previous email went unanswered for a week.
+Another member cautioned that B2B lead times could extend to 6 weeks, while another countered that Cohere typically responds within 2-3 days.
+Cohere's Aya Vision Sees 23 Languages: Cohere For AI launched Aya Vision, an open-weights multilingual vision model (8B and 32B parameters) supporting 23 languages, excelling at image captioning, visual question answering, text generation, and translation (blog post).
+Aya Vision is available on Hugging Face and Kaggle, including the new multilingual vision evaluation set AyaVisionBenchmark; a chatbot is also live on Poe and WhatsApp.
+Cohere Reranker v3.5 Latency Data MIA: A member requested latency figures for Cohere Reranker v3.5, noting the absence of publicly available data despite promises made in an interview.
+The interviewee had committed to sharing a graph, but did not ultimately deliver it.
+User Hunts Sales/Enterprise Support Contact: A new user joined seeking to connect with someone from sales / enterprise support at Cohere.
+The user was encouraged to introduce themself, including details about their company, industry, university, current projects, favorite tech/tools, and goals for joining the community.
+Modular (Mojo 🔥) Discord
+
+Mojo Still a Work in Progress: A member reported that Mojo is still unstable with a lot of work to do and another member asked about a YouTube recording of a virtual event, but learned it wasn’t recorded.
+The team mentioned that they will definitely consider doing a similar virtual event in the future.
+Triton Tapped as Mojo Alternative: A member suggested Triton, an AMD software supporting Intel and Nvidia hardware, as a potential alternative to Mojo.
+Another member clarified that Mojo isn't a superset of Python but rather a member of the Python language family and being a superset would be for Mojo like muzzle.
+Mojo Performance Dips in Python venv: Benchmarking revealed that Mojo's performance boost is significantly reduced when running Mojo binaries within an active Python virtual environment, even for files without Python imports.
+The user sought insights into why a Python venv affects Mojo binaries, which should be independent.
+Project Folder Structure Questioned: A developer requested feedback on a Mojo/Python project's folder structure, which involves importing standard Python libraries and running tests written in Mojo.
+They use Python.add_to_path extensively for custom module imports and a Symlink in the tests folder to locate source files, seeking better alternatives.
+Folder Structure moved to Modular Forum: A user initiated a discussion on the Modular forum regarding Mojo/Python project folder structure, linking to the forum post.
+This action was encouraged to ensure long-term discoverability and retention of the discussion, since Discord search and data retention is sub-par.
+DSPy Discord
+
+SynaLinks Enters the LM Arena: A new graph-based programmable neuro-symbolic LM framework called SynaLinks has been released, drawing inspiration from Keras for its functional API and aiming for production readiness with features like async optimization and constrained structured output - SynaLinks on GitHub.
+The framework is already running in production with a client and focuses on knowledge graph RAGs, reinforcement learning, and cognitive architectures.
+Adapters Decouple Signatures in DSPy: DSPy's adapters system decouples the signature (declarative specification of what you want) from how different providers produce completions.
+By default, DSPy uses a well-tuned ChatAdapter and falls back to JSONAdapter, leveraging structured outputs APIs for constrained decoding in providers like VLLM, SGLang, OpenAI, Databricks, etc.
+DSPy Simplifies Explicit Type Specification: DSPy simplifies explicit type specification with code like contradictory_pairs: list[dict[str, str]] = dspy.OutputField(desc="List of contradictory pairs, each with fields for text numbers, contradiction result, and justification."), but this is technically ambiguous because it doesn't specify the dict's keys.
+Instead, consider list[some_pydantic_model] where some_pydantic_model has the right fields.
+DSPy Resolves Straggler Threads: PR 7914 (merged) addresses stuck straggler threads in dspy.Evaluate or dspy.Parallel, aiming for smoother operation.
+This fix will be available in DSPy 2.6.11; users can test it from main without code changes.
+tinygrad (George Hotz) Discord
+
+ShapeTracker Merging Proof Nearly Complete: A member announced a ~90% complete proof in Lean of when you can merge ShapeTrackers, available in this repo and this issue.
+The author notes that offsets and masks aren't yet accounted for, but extending the proof is straightforward.
+Unlocking 96GB 4090s on Taobao: A member shared a link to a 96GB 4090 on Taobao (X post), eliciting the comment that all the good stuff is on Taobao.
+There was no further discussion.
+Debugging gfx10 Trace Issue: A member requested feedback on a gfx10 trace, inquiring whether to log it as an issue.
+Another member suspected a relation to ctl/ctx sizes and suggested running IOCTL=1 HIP=1 python3 test/test_tiny.py TestTiny.test_plus for debugging assistance.
+Assessing Rust CubeCL Quality: A member asked about the quality of Rust CubeCL, noting it comes from the same team behind Rust Burn.
+The discussion did not yield a conclusive assessment of its quality.
+Eleuther Discord
+
+Suleiman dives into AI Biohacking: Suleiman, an executive with a software engineering background, introduced himself to the channel, expressing interest in AI and biohacking.
+He is exploring nutrition and supplement science to develop AI-enabled biohacking tools to improve human life.
+Naveen Unlearns Txt2Img Models: Naveen, a Masters cum Research Assistant from IIT, introduced himself and his work on Machine Unlearning in Text to Image Diffusion Models.
+He mentioned a recent paper publication at CVPR25, focusing on strategies to remove unwanted concepts from generative models.
+ARC Training universality hangs in balance: A user questioned whether Observation 3.1 is universally true for almost any two distributions with nonzero means and for almost any u35% on ARC training.
+The discussion stalled without clear resolution, and there was no discussion on the specific conditions or exceptions to Observation 3.1.
+Compression Begets Smarts?: Isaac Liao and Albert Gu explore if lossless information compression can yield intelligent behavior in their blog post.
+They are focusing on a practical demonstration, rather than revisiting theoretical discussions about the role of efficient compression in intelligence.
+ARC Challenge uses YAML config: Members discussed using arc_challenge.yaml for setting up ARC-Challenge tasks.
+The discussion involved configuring models to use 25 shots for evaluation, emphasizing the importance of few-shot learning capabilities in tackling the challenge.
+Torchtune Discord
+
+Custom Tokenizer Troubles in Torchtune: Users encounter issues when Torchtune overwrites custom special_tokens.json with the original from Hugging Face after training, due to the copy_files logic in the checkpointer.
+A proposed quick fix involves manually replacing the downloaded special_tokens.json with the user's custom version in the downloaded model directory.
+Debate over Checkpointer save_checkpoint method: A member suggested supporting custom tokenizer logic by passing a new argument to the checkpointer's save_checkpoint method in Torchtune.
+However, others questioned the necessity of exposing new configurations without a strong justification.
+LLM Agents (Berkeley MOOC) Discord
+
+MOOC Students Get All Lectures: A member inquired whether Berkeley students receive exclusive lectures not accessible to MOOC students, specifically from the LLM Agents MOOC.
+Another member clarified that Berkeley students and MOOC students attend the same lectures.
+Students Recall December Submission: A member mentioned submitting something in December related to the course, presumably a certificate declaration form from the LLM Agents MOOC.
+Another member sought confirmation regarding the specific email address used for the certificate declaration form submission, suggesting potential administrative follow-up.
+Gorilla LLM (Berkeley Function Calling) Discord
+
+Seek clarity on AST Metric: A member sought clarification on the definition of the AST metric within the Gorilla LLM Leaderboard channel.
+They questioned if the AST metric represents the percentage of correctly formatted function calls produced by LLM responses.
+Members Question V1 Dataset Construction: A member inquired about the methodology used to construct the V1 dataset for the Gorilla LLM Leaderboard.
+Understanding the dataset construction process could provide valuable insights into the leaderboard's evaluation methodology.
+The MLOps @Chipro Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+The AI21 Labs (Jamba) Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+PART 2: Detailed by-Channel summaries and links
+
+The full channel by channel breakdowns have been truncated for email.
+
+If you want the full breakdown, please visit the web version of this email: [AINews] QwQ-32B claims to match DeepSeek R1-671B!
+
+If you enjoyed AInews, please share with a friend! Thanks in advance!
+
+This was issue #395 of AI News. You can subscribe, unsubscribe, or view this email online.
+
+This email brought to you by Buttondown, the easiest way to start and grow your newsletter.
+
+​
