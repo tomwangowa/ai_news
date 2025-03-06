@@ -1,0 +1,432 @@
+This message was sent from outside of Trend Micro. Please do not click links or open attachments unless you recognise the source of this email and know the content is safe.
+
+Congrats team!
+
+AI News for 3/3/2025-3/4/2025. We checked 7 subreddits, 433 Twitters and 29 Discords (221 channels, and 4084 messages) for you. Estimated reading time saved (at 200wpm): 481 minutes. You can now tag @smol_ai for AINews discussions!
+
+Their brief blogpost here. It's not technical news, but it's still only every other week that a frontier lab raises money, and more money for Claude is only good news for AI Engineers.
+
+Meanwhile, GPT 4.5 rated #1 across the board on LMArena. For posterity, here is where the current rankings lie under style control. Claude has a ways to go yet to reclaim frontier status.
+
+image.png
+
+The Table of Contents and Channel Summaries have been moved to the web version of this email: [AINews] Anthropic's $61.5B Series E!
+
+AI Twitter Recap
+
+Model Performance & Benchmarks, Comparisons and Evaluations
+
+GPT-4.5 Performance Leadership: @lmarena_ai announced that GPT-4.5 has topped the Arena leaderboard, achieving #1 rank across all categories, including Multi-Turn and Style Control, based on over 3k votes. @lmarena_ai further detailed that GPT-4.5 leads in Multi-Turn, Hard Prompts, Coding, Math, Creative Writing, Instruction Following, and Longer Query categories. @lmarena_ai highlighted GPT-4.5's strength in Style Control, leading the leaderboard in this specific area. @lmarena_ai provided a link to explore full GPT 4.5 results.
+DeepSeek R1 Joint #1 with GPT 4.5: @teortaxesTex noted that DeepSeek R1 is ranked joint #1 with GPT 4.5 on hard prompts with style control, congratulating the OpenAI team.
+GPT-4.5 vs Claude 3.7 Coding Capabilities: @casper_hansen_ questioned if GPT 4.5 is actually better than Claude Sonnet 3.7 in coding.
+GPT-4.5 vs Claude 3.7 for Workflow: @omarsar0 described a new coding workflow using GPT-4.5 for brainstorming, Claude 3.7 Sonnet for building, and Windsurf for agentic tasks.
+GPT-4.5 Benchmark Skepticism: @aidan_mclau asked @DaveShapi if 4.5 is overfit to benchmarks, or if other models are. @willdepue expressed surprise at GPT-4.5 topping categories without test-time compute, suggesting pretraining is still important. @vikhyatk is retracting positive comments about GPT-4.5, not wanting to be seen as a "low-taste tester".
+Claude Sonnet 3.7 Performance: @Teknium1 described Sonnet 3.7 in Cursor as "busted" and questioned its proper chat mode usage. @reach_vb mentioned Claude Sonnet 3.7 and DeepSeek as favorite LLMs, using Cursor and DeepSeek chat.
+LMSYS Leaderboard Importance: @aidan_clark stated that LMSYS is clearly the most important benchmark and advised labs to prioritize it for maximizing user value.
+Benchmark Relevance Questioned: @cto_junior argued that beating benchmarks is not relevant now, and gaining users is more important.
+Industry News, Funding, and Partnerships
+
+Anthropic's $3.5B Funding Round: @AnthropicAI announced a $3.5 billion funding round at a $61.5 billion valuation, led by Lightspeed Venture Partners, to advance AI development and international expansion.
+Perplexity AI and Deutsche Telekom Partnership: @perplexity_ai announced a partnership with Deutsche Telekom to make Perplexity Assistant a native feature on their new AI Phone, further highlighted by @AravSrinivas and @yusuf_i_mehdi who sees AI-first browsers as the future with Edge pushing this forward with Copilot integration.
+Microsoft Dragon Copilot Launch: @mustafasuleyman highlighted the Microsoft Dragon Copilot launch, aiming to reduce administrative overload in healthcare and refocus doctors on patients.
+DeepSeek AI on Copilot+ PCs: @yusuf_i_mehdi mentioned DeepSeek R1's 7B and 14B distilled models are now available on Snapdragon-powered Copilot+ PCs, emphasizing hybrid AI.
+Firefly Aerospace Moon Landing: @kevinweil congratulated @Firefly_Space on being the first commercial company to successfully land a vehicle on the moon.
+Tools, Frameworks, and Coding Workflows
+
+LlamaParse Updates with Claude 3.7 and Gemini 2.0 Support: @llama_index announced updates to LlamaParse, adding support for AnthropicAI Claude Sonnet 3.7 and Google Gemini 2.0 Flash in "Parse With Agent" mode for better table parsing and cross-page consistency, and in "Parse With LVM" mode for parsing screenshots.
+LlamaIndex Workflow-Based Travel Planner Tutorial: @llama_index shared a tutorial and repo by RS Rohan on building an agentic travel planner using LlamaIndex, demonstrating structured predict feature with Pydantic models, API integrations (Google Flights, Hotels, Top Sites), and event-driven architecture.
+LlamaExtract for Resume Extraction: @llama_index introduced LlamaExtract, powered by SOTA LLMs like 3.7 Sonnet and o3-mini, for extracting standardized candidate information from resumes, and generalizable to other data types.
+SynaLinks, Keras-inspired Framework for LLM Applications: @fchollet and @fchollet introduced SynaLinks, a Keras-inspired framework for building LLM applications as DAGs of trainable components, enabling sophisticated pipelines and RL fine-tuning.
+Groovy, Python-to-JavaScript Engine: @_akhaliq highlighted Groovy, a Python-to-JavaScript engine that transpiles Python functions for client-side execution, with @algo_diver noting its potential to make Gradio production-ready.
+Outlines for Structured Generation with MLX-LM: @awnihannun shared how to use Outlines by @dottxtai with mlx-lm for local structured generation, with documentation provided @awnihannun.
+LangSmith for Observability and Evals Tooling: @hwchase17 pointed out that LangSmith is used to transform user feedback into evals, emphasizing observability as evals tooling.
+Cursor Coding Workflow: @omarsar0 mentioned using Cursor in a new coding workflow. @jeremyphoward noted creating complex apps in a day using tools like Cursor with Python, fasthtml and MonsterUI.
+Gibberlink for Encrypted AI Agent Communication: @ggerganov, @ggerganov, and @ggerganov introduced Gibberlink, demonstrating encrypted audio chat between two AI agents and provided a GitHub project link.
+Research and Papers
+
+Brain-to-Text Decoding Research: @AIatMeta highlighted a research paper from Meta FAIR and BCBL researchers on Brain-to-Text Decoding, a non-invasive approach via typing.
+Diffusion Models and Flow Matching Course: @omarsar0 and @TheTuringPost shared a free MIT course on Introduction to Flow Matching and Diffusion Models, covering theory, training, and applications, including course notes, slides, YouTube videos and labs, with @omarsar0 providing another link.
+Reasoning LLMs Deep Dive: @omarsar0 recommended a "Deep Dive into Reasoning LLMs", summarizing progress in post-training.
+SoS1 Paper on Reasoning LLMs as Sum-of-Square Solvers: @_akhaliq shared a paper titled "SoS1: O1 and R1-Like Reasoning LLMs are Sum-of-Square Solvers".
+HAIC Paper on Improving Human Action Understanding: @_akhaliq posted about the "HAIC" paper, focusing on improving human action understanding and generation using better captions for multi-modal LLMs.
+Sim-to-Real Reinforcement Learning for Humanoid Manipulation: @arankomatsuzaki and @arankomatsuzaki highlighted Nvidia's presentation on Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids, achieving robust generalization without human demonstration, and provided project and abstract links.
+Chains-of-thought and Inference Bottleneck: @francoisfleuret discussed how chains-of-thought make inference compute-bound and suggested distilling large models into faster SSMs or hybrids for better trade-offs.
+LLMs as Evolution Strategies: @SakanaAILabs listed several works discussed in an interview, including "(1) Large Language Models As Evolution Strategies".
+TileLang for Kernel Programming: @teortaxesTex mentioned TileLang, a user-friendly AI programming language lowering the barrier to kernel programming.
+Evaluation of LLM Belief Structures: @teortaxesTex shared an insightful evaluation of LLM belief structures.
+LangProBe for Evaluating AI Systems: @lateinteraction introduced LangProBe from @ShangyinT et al., questioning what complete AI systems should be built and evaluated.
+AI in Business & Applications
+
+Inventory Tracking and Demand for Tokens: @gallabytes suggested that the demand for trillions of tokens per day will come from areas like improving inventory tracking in various sectors of the economy.
+AI for Shader Golf: @torchcompiled shouted out to folks working on shader golf.
+AI Powered Wiki Explorer App: @omarsar0 and @omarsar0 developed a wikiexplorer app using AI, utilizing Wikipedia and OpenAI models for hints, designed to be a fun way to learn new topics.
+AI Research Agent for Literature Reviews: @TheTuringPost promoted Deep Review by SciSpace, an AI research agent for systematic literature reviews, claiming it saves hours of work and is significantly more relevant than OpenAI's Deep Research and Google Scholar.
+AI in Android Day-to-day Life: @Google highlighted AI on Android at #MWC25, demonstrating features like Circle to Search for translating menus and Gemini Live for learning complex topics.
+AI Co-scientist Example with AlphaFold: @_philschmid gave an example of extending a GoogleAI co-scientist with GoogleDeepMind AlphaFold for protein modification assessment.
+AI in Web Development with Groovy and Gradio: @algo_diver believes Groovy will make Gradio production-ready for full-stack web development.
+Memes and Humor
+
+Karpathy's AirPods Pro Saga: @karpathy shared a humorous, multi-line tweet in the style of 4chan greentext about AirPods Pro malfunctions.
+Elon Musk and Grok Realism: @Teknium1 posted "Grok is much more open to realism" with a link, implying Grok's unfiltered nature, and @Teknium1 replied "Better" to a Grok image comparison.
+AI Reddit Recap
+
+/r/LocalLlama Recap
+
+Theme 1. Atom of Thoughts Enhancing Smaller Models
+
+New Atom of Thoughts looks promising for helping smaller models reason (Score: 641, Comments: 90): Atom of Thoughts (AOT) algorithm significantly enhances smaller models' reasoning, achieving 80.6% F1 on HotpotQA with GPT-4o-mini, surpassing other models. AOT's process includes decomposing questions into a Directed Acyclic Graph (DAG), simplifying through subquestion contraction, and iterating to reach atomic questions, as illustrated in the accompanying flowchart.
+Critiques on Methodology and Results: Users questioned the reliability of the Atom of Thoughts (AOT) results, citing potential issues with the sample size of 1k tasks, unspecified confidence intervals, and tests conducted at temperature 1, which could lead to high result volatility. Concerns were raised about the randomness of results, suggesting that the reported improvements might not be statistically significant without repeated testing.
+Discussion on Rule-Based Methods: There was a debate on the relevance of rule-based methods in AI, with some users arguing that while rule-based approaches are not scalable, they can still be relevant in specific contexts. The concept of the "bitter lesson" was mentioned, indicating that computation often trumps encoding knowledge, but it doesn't rule out the utility of logical rulesets.
+Practical Implementation and Resources: A link to the open-source repository of the AOT algorithm was shared, allowing users to explore and implement the algorithm themselves (GitHub link). Additionally, the original paper is available on arXiv, providing further details on the algorithm's development and performance.
+Theme 2. Klee Open-Sourced for Local LLM Use with Zero Data Collection
+
+I open-sourced Klee today, a desktop app designed to run LLMs locally with ZERO data collection. It also includes built-in RAG knowledge base and note-taking capabilities. (Score: 397, Comments: 67): The Klee desktop app is now open-sourced, designed for running LLMs locally without any data collection, and includes a RAG knowledge base and note-taking features. The app interface offers model options like "deepseek-r1-7b" and emphasizes privacy with a "Local Mode" toggle, ensuring no data is sent to the cloud.
+Users discuss the backend compatibility of Klee, questioning if it forces the use of Ollama or if alternatives like llama.cpp can be used. There is also curiosity about how Klee compares to other platforms like LM Studio and OpenWebUI, with some pointing out that Klee is essentially a wrapper over Ollama.
+Data privacy is a focal point, with inquiries about the "ZERO data collection" claim and whether using Ollama + Open WebUI involves data collection. It's noted that both platforms run stats for bug collection, which can be disabled, aligning with Klee's emphasis on local data security.
+The user interface and features are debated, with some users put off by the Slack-inspired UI, while others appreciate the simplicity for non-technical users. Questions are raised about the potential for an Android port, the ability to run models from Hugging Face, and the customization of the RAG knowledge base.
+Theme 3. Split Brain 'DeepSeek-R1-Distill-Qwen' and 'Llama' Fusion Architecture
+
+Split brain "DeepSeek-R1-Distill-Qwen-1.5B" and "meta-llama/Llama-3.2-1B" (Score: 139, Comments: 30): The Split Brain project explores a novel dual-decoder architecture that combines two distinct language models, DeepSeek-R1-Distill-Qwen-1.5B and meta-llama/Llama-3.2-1B, to enable simultaneous processing and cross-attention fusion. This system allows for collaborative reasoning and specialized processing by maintaining separate models on different GPUs, utilizing an EnhancedFusionLayer for cross-attention, and employing a sophisticated gating mechanism for adaptive information flow. The architecture enhances computational efficiency and task flexibility, allowing for both collaborative and specialized operations while maintaining parameter efficiency by only training the fusion components.
+Cross-Attention Fusion: The Split Brain project uses bidirectional cross-attention fusion where both models generate outputs simultaneously, attending to each other's hidden representations rather than final token outputs. This real-time interaction at the hidden representation level allows for mutual influence on the models' 'thinking processes' without direct token feedback.
+Model Vocabulary Challenges: A key challenge identified is managing different vocabularies between the models, which requires a sophisticated mechanism to ensure seamless interaction and processing.
+Potential for Personalization: There is interest in using a split-brain approach for personalized AI models by combining a small, personality-reflective model with a larger, powerful model. This could surpass current prompt-based agents by allowing one model to direct and correct the other, enhancing personalization through collaborative processing.
+Other AI Subreddit Recap
+
+/r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding
+
+TO BE COMPLETED
+
+AI Discord Recap
+
+A summary of Summaries of Summaries by Gemini 2.0 Flash Thinking
+
+Theme 1. IDE Wars: Cursor Stumbles, Windsurf Surfs On, and Plugin Pains Persist
+
+Cursor IDE Plunges into Bug Abyss: Cursor IDE users are battling instability, connection failures, and checkpoint malfunctions, prompting engineers to eye Windsurf and Trae AI as life rafts. The latest release is described as incredibly unstable, with MCP server configurations adding to the chaos, especially on Windows and remote Ubuntu setups, leading to client creation failures and users seeking help on forums.
+Windsurf's Ubuntu Update Capsizes Systems Then Self-Corrects: A recent Windsurf update for Ubuntu 24.04 backfired spectacularly, bricking systems with a FATAL:setuid_sandbox_host.cc(158) error, forcing reinstalls and data loss for some, but a subsequent patch and workaround involving chrome-sandbox permissions offered a lifeline. Users on Windows ARM64 however are celebrating as Windsurf Next now supports their platform, available for download here.
+JetBrains Plugin Gets Requesting Hang-up: Codeium's JetBrains plugin is frustrating users by getting stuck in a perpetual Processing request state, particularly in the latest pre-release, rendering it useless for generating code and forcing downgrades to older, more stable versions to keep workflows afloat. The issue with the JetBrains plugin contrasts with the Windows ARM64 support in Windsurf Next, showcasing uneven feature reliability across different IDE integrations.
+Theme 2. Claude 3.7: Speed Bumps and Credit Crunch, But Still Impresses
+
+Claude 3.7 Chokes on Cursor, Runs in Slow Motion: Claude 3.7 is causing headaches in Cursor IDE, with users reporting it's insanely slow and prone to halting mid-request, pushing many to downgrade or use Cursor's 'Ask' mode, highlighting concerns about the model's current stability. Despite instability in Cursor, users in the OpenAI Discord declared ChatGPT is a joke now and found Claude 3.7 to be very impressive, particularly noting Claude's superior context understanding in larger files, boasting a 200K token window, eclipsing ChatGPT's 128K.
+Claude 3.7 Devours Windsurf Credits Like Pac-Man: Claude 3.7 in Windsurf is guzzling premium flow action credits at an alarming rate, with reports of 30-40 tool calls per prompt for minor edits, leading to rapid credit depletion and user ire, some users are switching back to 3.5 or considering a move to Cursor to escape the credit drain. Users are urging Codeium to demote Claude 3.7 from its default model status due to its voracious credit consumption.
+Claude Code Gets Anon-Kode Remix, Goes Open API: A developer, known as anon-kode, has released a modified, OpenAI-compatible version of Claude Code, dubbed anon-kode, after extracting the original source code (original tweet), making it compatible with OpenAI APIs (tweet) and available on GitHub, offering a potential open-source alternative, albeit with lots of things to fix.
+Theme 3. AI Models: New Releases, Performance Quirks, and Ethical Quandaries
+
+GPT-4.5 Claims Arena Throne, Image Recognition Debated: GPT-4.5 has ascended to the top of the Arena leaderboard, dominating across categories from coding to creative writing (source), but its image recognition capabilities are under scrutiny, with mixed reviews and debates on whether it surpasses GPT-4o, even though initial tests show a marginal +5% improvement on the MMMU benchmark. Despite leaderboard victories, some users feel OpenAI is deprioritizing Plus users in favor of Pro users, suggesting a shift in premium status perceptions.
+Grok's Custom Instructions Fail to Troll, Prompting Persona Panic: Grok AI's much-anticipated custom instructions feature, now live for all users, is facing criticism as being useless, with users reporting failures to mold Grok into desired personas, including one attempt to create an "abusive and lewd troll" that backfired, leaving users questioning the feature's efficacy. Despite custom instruction flops, Grok is praised for its debugging prowess, outshining models like O3 mini high sonnet in this area, although some users find O3 mini high sonnet superior in code creation tasks.
+Phi-3 Model Fine-Tuning Faces A100 Hurdles, Dataset Viewer Needs Error Fixes: Fine-tuning Phi-3 for multi-modality is proving to be a Herculean task, requiring an estimated 6+ A100s and approximately 2 weeks, even with Colab Pro, while Hugging Face's Dataset Viewer is plagued by errors impacting compatibility with various libraries and SQL, hindering data discoverability and usability. Despite these challenges, Hugging Face is celebrating latency reductions of up to 10x on Remote VAE Decode endpoints for SD v1, SD XL and Flux, thanks to code-name honey, empowering local AI builders with Hybrid Inference.
+Theme 4. Hardware Hustles: Tilelang Triumphs, AMD's Ascent, and SRAM Secrets
+
+Tilelang Kernel Smokes Triton, Nears Flash-MLA Speed: A lean 80-line tilelang kernel is boasting 95% performance of deepseek flashmla on H100, achieving a 500% speedup over Triton, showcasing tilelang's potential for high-performance computing, with code available on GitHub. This performance leap is stirring calls for an MLA leaderboard to showcase similar achievements, possibly repurposed from the bitnet group.
+AMD GPUs Inch Closer to ML Spotlight, Intel Arc A770 Joins Tinygrad Party: Discussions are heating up about AMD and Intel becoming viable alternatives to CUDA in ML pipelines, with some believing increased AMD market share could spur greater investment in their GPU computing department, while Intel Arc A770 GPUs are confirmed to be compatible with tinygrad using the OpenCL backend, broadening hardware options for developers. Despite AMD's progress, questions remain about their foundry time acquisition, with concerns Nvidia still holds a significant advantage in chip manufacturing access.
+SRAM's Cache Conspiracy Unveiled: Deep dives into SRAM architecture reveal that registers, shared memory, and cache are all SRAM constructs, with unallocated shared memory morphing into L1 cache, while Triton's cache_modifier in tl.load allows specifying L1 or L2 hits, but lacks direct cache level control, exposing the nuanced layers of memory management in GPU programming. For CUDA compilation, torch.cuda.get_device_capability() in PyTorch is suggested for determining --arch=, though nvidia-smi --query-gpu=name,compute_cap --format=csv offers a PyTorch-free alternative.
+Theme 5. Agent Innovations and Frustrations: Travel Planning AI, Smol Agent Quiz Fails, and MCP Multi-Agent Visions
+
+Travel App Agents Spring Up to Rescue Reel-Ravaged Travelers: A new app, ThatSpot, emerges to combat travel reel overload, deploying AI agents to automatically extract crucial trip-planning data—locations, prices, booking links—directly from travel reels, automating hours of manual research and streamlining trip organization for wanderlust-stricken users. The app promises to process travel reels and extract every mentioned place, automating the tedious manual research process.
+Smol Agents Quiz Stumps Students, Error Logs Hold Clues: The Smol Agents Quiz is causing headaches, with users reporting unclear requirements and failing scores despite multiple attempts, prompting calls to mine error logs from the quiz's app.py file to pinpoint necessary tool and model providers, highlighting the need for clearer quiz instructions and better error feedback in AI learning platforms. Despite quiz woes, HuggingFace has launched a new NLP Reasoning Course unit, aiming to educate on reinforcement learning in LLMs and contribution to Open R1.
+MCP Multi-Agent Architectures Materialize, Fast Agent Framework Floats: Engineers are exploring MCP for multi-agent systems, drawing inspiration from Anthropic workshops and envisioning frameworks for agents collaborating across devices, with one member sharing their fast-agent GitHub project for Defining, Prompting and Testing MCP enabled Agents and Workflows, allowing agents to be configured with distinct MCP servers and called as tools by other agents. However, MCP Terraform Registry setup is proving troublesome, particularly with Claude desktop and Cline, facing mcp-server-fetch errors when system-level proxies are active.
+PART 1: High level Discord summaries
+
+Cursor IDE Discord
+
+Cursor Plagued by Instability: Users report instability, connection failures, and non-functional checkpoints in the latest Cursor IDE release.
+Members consider alternatives like Windsurf and Trae AI due to the poor user experience.
+MCP Servers Cause Configuration Nightmares: Members struggle to configure MCP servers in Cursor, especially with Windows and remote Ubuntu workspaces, facing issues like client creation failures.
+One member eventually solved their issues with Pupeteer, as well as using Firecrawl MCP server for web scraping with LLM clients.
+Claude 3.7 Faces Glitches: Users experience issues with Claude 3.7 such as being insanely slow and stopping mid-request without errors.
+As a result, many resort to using Cursor's 'Ask' mode or reverting to older versions for critical tasks.
+Designers Dive into Landing Pages: Members share landing page designs generated with Cursor and discuss their aesthetic appeal and effectiveness.
+The community compares designs to those of Linear, Framer, Magician Design, and Webflow for inspiration.
+Repo Prompt Hailed for Multi-File Editing: Users show excitement about Repo Prompt, praising its multi-file edit capabilities and code snippet integration.
+The community also mentions BrowserTools for debugging, and PasteMax, an open source poor man's version of Repo Prompt, for file selection.
+Codeium (Windsurf) Discord
+
+Windsurf Adds Windows ARM64 Support: Windsurf Next now supports Windows ARM64, available for download here.
+This expansion allows users on Windows ARM64 platforms to leverage the latest features and improvements in Windsurf Next.
+Windsurf's Ubuntu Update Crashes Systems: A recent Windsurf update caused issues on Ubuntu 24.04, leading to the application failing to start with a FATAL:setuid_sandbox_host.cc(158) error.
+One user reported a system crash, reinstallation, and data loss, highlighting the need for backups before updating, and a manual workaround involving changing permissions for chrome-sandbox may be required.
+Claude 3.7 Burns Credits, Sparks User Ire: Users report Claude 3.7 in Windsurf is rapidly depleting premium flow action credits due to excessive tool calls per prompt, with some experiencing 30-40 tool calls for minor changes.
+Members suggest Codeium hide Claude 3.7 as a default model, with some switching back to 3.5 or other models for better efficiency, and are considering switching to Cursor.
+Codeium Customer Support Faces Scrutiny: Users are reporting poor customer support experiences from Codeium, with one user awaiting resolution of a subscription issue for four weeks.
+The lack of timely and effective support is driving users to seek alternative solutions and has raised concerns about Codeium's responsiveness.
+JetBrains Plugin Plagued by Processing Request Hang: Users of the JetBrains plugin are encountering a persistent Processing request state, leading to errors, particularly in the latest pre-release version.
+This issue renders the plugin unable to generate responses, disrupting workflow and necessitating a downgrade to a more stable version.
+OpenAI Discord
+
+OpenAI Hosts Sora Onboarding: The Sora team hosted a live onboarding session covering Sora fundamentals and optimal prompting techniques on , and you can join the discussion via this discord link.
+The Sora 101 session also shared insights from the onboarding process for early access artists.
+GPT-4.5 Image Recognition Gets Mixed Reviews: Members are debating whether the new GPT-4.5 has better image recognition compared to GPT-4o, with Future Machine being more vocal about OpenAI (OAI)'s choices.
+Initial tests show that GPT-4.5 scores a bit higher than 4o on the MMMU (vision oriented reasoning benchmark) with a +5% improvement.
+Custom Grok is a Flop: Grok AI's custom instructions feature has been released for all users, but members report the custom instruction is useless.
+One member shared custom Grok instructions aiming for an abusive and lewd troll persona, but reported it doesn't work, and other users reported the same.
+Claude 3.7 Impresses, But Projects Flounder: One user declared ChatGPT is a joke now and found Claude 3.7 to be very impressive, while Claude can better understand the context in larger files with 200K context window.
+However, another user said Claude's projects are of no use, complaining that they can hardly upload only two files maximum and it says memory full, calling Claude over hyped.
+Dall-E Delivers Synthetic Biology: A member prompted Dall-E to generate an image of synthetic plants that grow hearts and livers for transplant, visible within a transparent membrane and nourished by the GM plant.
+The initial results emphasized hearts over livers, prompting the user to refine the prompt with more details about the liver lobes.
+Unsloth AI (Daniel Han) Discord
+
+Llama Model Zips WAVs Hilariously: A member amusingly reported that compressing a 192 KB ZIP file with a llama model resulted in a 48 KB lossless WAV format.
+The user found this confusion since the model then attempted to re-zip the WAV to make it smaller, specifically mentioning the r1-1776-distill-llama-70b model.
+GRPO Training: More Steps Needed for Reasoning?: Users discussed the necessary training steps for LoRA training Qwen2.5-14B-instruct with GRPO, emphasizing lowering the loss for better reasoning.
+Suggestions included allocating around 24 hours, or 700-1200 steps, underscoring that convergence is model-dependent, as described in Unsloth's Documentation.
+GCC Compiler Causes VLLM Pain: A user encountered a RuntimeError related to the GCC compiler while running the GRPO tutorial locally with meta-Llama-3.1-8B-Instruct.
+Despite attempting to install GCC via conda, the issue persisted, and the user is restricted from using apt-get due to security reasons on their school's HPC.
+String Replacement: Coding Strategy Success?: Members debated the effectiveness of string replacement for code editing with one member deeming it generally garbage.
+Another member, however, reported success fine-tuning Qwen 2.5 for string replacement, especially when the model has access to the entire file before making replacements.
+Claude 3.5 Sonnet Sweeps Bench with SOTA: Anthropic's Claude 3.5 Sonnet achieves 49% on SWE-bench Verified, surpassing the previous state-of-the-art model's 45%.
+Members made a reference to the bitter lesson: general methods that leverage computation are ultimately the most effective.
+Perplexity AI Discord
+
+Perplexity Web UI Rewrite Feature Malfunctions: Users report that the Perplexity web UI's rewrite functionality is broken, always defaulting to pplx_pro regardless of selected model.
+Some experienced prompt duplication, tagging <@883069224598257716> for support, indicating significant issues with the rewrite tool.
+Claude 3 Model Confusion Persists: Users are unsure if Perplexity model indicators accurately reflect the model in use, questioning whether they're receiving Claude 3.7 Sonnet or Claude 3 Opus when selecting Claude.
+Some noticed that Pro Search overrides the selected model with Sonar, creating disparities between chosen and employed models.
+Perplexity API Troubles Obsidian Web Clipper: The Perplexity API's partial incompatibility with OpenAI standards causes issues for tools like Obsidian Web Clipper.
+The API's requirement for an assistant message between user messages, absent in OpenAI, hinders Obsidian Web Clipper's ability to post consecutive user messages.
+Deepseek generates Controversial Propaganda?: A user shared an image allegedly generated by Deepseek which the community regarded as politically biased propaganda.
+Another member dismissed the image, asserting You are fake deepseek. Real deepseek doesn't talk on western affairs.
+HuggingFace Discord
+
+Phi-3 Fine-Tuning Faces Hurdles: One member is fine-tuning Phi-3 for multi-modality using an A100-equipped Colab Pro, but was cautioned such fine-tuning would take 6+ A100s and run for approximately 2 weeks.
+Another member added that [QLora and Peft make anything possible with a positive attitude and a credible project].
+Dataset Viewer experiences Errors: A user suggested fixing Dataset Viewer errors for compatibility with various libraries and SQL, to improve data discoverability.
+Another user thanked them in advance, and jokingly requested an additional 1.2M rows of a HQ dataset.
+Hugging Face reduces latency with new VAE: Hugging Face deployed code-name honey on Remote VAE Decode endpoints for SD v1, SD XL and Flux, reducing latency up to 10x which empowers local AI builders with Hybrid Inference.
+Hybrid Inference is free, fully compatible with Diffusers, and developer-friendly with simple requests and fast responses, and VAE Encode is coming soon.
+Smol Agents Quiz Sparks Frustration: A member expressed frustration with the Smol Agents Quiz, citing unclear requirements and receiving a score of 0.0 out of 5 despite multiple attempts, referencing the quiz's app.py file.
+The member pointed to the need to mine error logs to understand the exact providers required for tools and models.
+Lambda Go Labs: AI learning and building: Lambda Go Labs is a community focused on AI learning, building, and research.
+The community offers hands-on experience, opportunities to share work, and a supportive network for both experienced professionals and newcomers.
+aider (Paul Gauthier) Discord
+
+Aider Leaderboard Tooling Showdown: The Aider leaderboard now benchmarks AI models, alongside tools like Claude Code, assessing them as primary coding assistants.
+A user advocated for a tool-agnostic benchmark akin to SWE Benchlets to facilitate broader comparisons of coding tools and models.
+Anon-Kode Remixes Claude Code: A modified version of Claude Code, dubbed anon-kode, was released by the same developer who extracted the source code (link to original tweet), now compatible with OpenAI APIs (link to tweet) and available on GitHub.
+Lots of things to fix, but you can use anything that supports OpenAI-style API. If you're brave, give it a try.
+Gemini 2.0 Pro Hits Context Wall?: A user reported RESOURCE_EXHAUSTED errors with the gemini/gemini-2.0-pro-exp-02-05 model in Aider when using a large context window.
+In contrast, the gemini-2.0-flash-thinking-exp-01-21 model functions smoothly; the user inquired about maximizing context window usage with the Pro model.
+Aider Gets Git Diff Wish: A user requested Aider to directly edit files using git diff syntax (e.g., <<<<<< branch, ======, >>>>>>> replace) within the files themselves.
+Currently, Aider displays diffs in the terminal, but the user seeks in-file editing for pre-acceptance modifications; other users pointed out a fork would be necessary, or use an external diff tool.
+Grok's Debugging Edge: Members noted that while Grok excels at debugging, O3 mini high sonnet may outperform it in code creation tasks, such as adding new functions.
+They observed Claude 3.7 sometimes introduces unintended elements, while deepseek-chat with O1 Pro has proven highly reliable as an editor, approaching 95% accuracy.
+GPU MODE Discord
+
+Vision Models Still Favor Attention: Despite alternatives like MLP-Mixer existing, attention-based ViTs remain the SOTA choice for vision models.
+The relative underutilization of MLP-Mixer, detailed in MLP-Mixer: An all-MLP Architecture for Vision, was questioned by a member.
+SRAM's Cache Quirks Revealed: Registers, shared memory, and cache are chip/software level properties constructed from SRAM, with unallocated shared memory becoming L1 cache.
+While direct cache level control (L1/L2) is absent in Triton, cache_modifier in tl.load specifies L1 or L2 hits, where cg targets L2 exclusively.
+CUDA Architecture Query gets Torch Answer: For determining the --arch= for CUDA compilation, torch.cuda.get_device_capability() from PyTorch was suggested, and the alternative solution nvidia-smi --query-gpu=name,compute_cap --format=csv was found.
+The second option avoids needing a PyTorch dependency, and the CUDA Runtime API can programmatically select the best device based on specified criteria as shown in the docs.
+Tilelang kernels flash faster than Flash-MLA: A member boasted that 80 lines of tilelang kernel code yields 95% performance of deepseek flashmla, a 500% speedup over Triton on H100, with a link to the GitHub repo.
+Another member expressed the desire to have an MLA leaderboard, perhaps repurposed from the bitnet group.
+FA3 needs Absmax for Quantization: While FA3 is now working, it exhibits significantly higher quantization error than basic absmax quantization, suggesting a need for strategic adjustments.
+It was proposed to apply absmax quantization after the Hada transform, especially for 'v', mitigating out-of-distribution issues stemming from large activations.
+OpenRouter (Alex Atallah) Discord
+
+Travel App Springs Up to Save Travel Reels: An app emerged to solve the problem of endless saving of travel reels and hours of manual research, using AI agents to automatically extract data such as locations, price ranges, reservation requirements, booking links, and operating hours directly from travel reels at https://thatspot.app/.
+The app streamlines trip planning by leveraging AI agents to process travel reels, automatically extracting every place mentioned, automating the manual research process.
+Google Flash 2.0 Flashes a 502 Error: A user reported a 502 error when inferencing with Google's Flash 2.0 and Flash 2.0 Light models, with the error message "Provider returned error".
+The error indicates an internal issue encountered by Google.
+OpenRouter's Sonnet singing with Rate Limits: A user asked about the rate limits for Claude 3.7 Sonnet in terms of RPM (Requests Per Minute) and TPM (Tokens Per Minute).
+A member clarified that OpenRouter doesn't impose specific rate limits per user, pointing to Anthropic's rate limits documentation and BYOK settings (OpenRouter Integration Settings).
+OpenRouter API Key throws VS Studio for a Loop: A user faced a 401 Authentication Failure using an OpenRouter API key in VS Studio via RooCode, despite having sufficient funds.
+Suggestions included verifying the API key, selecting OpenRouter as the API provider in RooCode, and ensuring the correct base URL, referencing this tutorial.
+BYOK Azure Models Yearning for OpenRouter: A user inquired about using BYOK (Bring Your Own Key) with Azure models in OpenRouter, seeking a unified API for finetuned models.
+A member clarified that only models listed in the /models endpoint are supported, excluding BYOK models, suggesting the use of an OpenAI API Key in Integration settings instead.
+LM Studio Discord
+
+LM Studio Launches SDKs for Python and TypeScript: LM Studio released software developer kits for Python (lmstudio-python) and TypeScript (lmstudio-js) under the MIT license to allow developers to tap into LM Studio's AI capabilities from their own code.
+The SDKs support LLMs, embedding models, and agentic flows, featuring the .act() API for autonomous task execution using provided tools, as documented on their respective pages (lmstudio-python) and (lmstudio-js).
+LM Studio "Unsupported Device" Error Plague Users: After an LM Studio update, users reported encountering Failed to load model errors with the message Unsupported device, advising to try adjusting GPU offloading or thread pool size.
+The error might be tied to context length impacting memory usage; the left number is the number of tokens the model is using in the chat history already while the right number is the context limit.
+Diffusion Model Architecture Unsupported by Llama.cpp: Users reported errors loading diffusion models, receiving error loading model architecture: unknown model architecture: 'sd3', it was clarified that llama.cpp does not support image/video/audio generation models.
+Support for vision models in llama.cpp is uncertain, with concerns about the lack of Llama 3.2 vision or Pixtral vision support, however, some believe that UI-TARS fixes will help.
+Pseudollama Patches OLLAMA Gap: Members discussed if LM Studio endpoints were compatible with apps that take an OLLAMA endpoint, and it was answered that it is not supposed to work by default, but Pseudollama can bridge the gap.
+The author noted that this is 100% vibe coded, so there are likely dumb issues throughout, but it works.
+AMD needs to compete in the GPU Space: Members discussed whether AMD or Intel could become viable for ML pipelines and frameworks to compete with CUDA.
+Some members believe if AMD increases their market share, they would be more interested in investing in their GPU computing department, and that the real question is whether AMD can buy the time from a chip foundry, because Nvidia has the upper hand.
+Nous Research AI Discord
+
+Nous API Pricing Discussed: Members discussed Nous potentially launching an API for their models to generate income, with speculative pricing around $0.8/M tokens, potentially yielding $800-1600/day.
+Suggestions included pricing closer to $1/M input tokens and $3/M output tokens for specialized models, with ongoing efforts underway to realize this.
+LLMs Fail at CUDA Kernel Generation: Members concurred that while LLMs can produce valid CUDA syntax, they struggle to independently generate high-performance CUDA kernels.
+The optimal approach involves integrating hardware and compute graph data with the LLM, potentially via a knowledge graph or GNN, complemented by intensive GPU profiling.
+Logic-RL Boosts Reasoning with Rule-Based RL: The Logic-RL paper explores the potential of rule-based reinforcement learning (RL) in large reasoning models, taking inspiration from DeepSeek-R1.
+The 7B model, trained on only 5K logic problems, displayed generalization on challenging math benchmarks like AIME and AMC.
+Runway Unveils General World Models: Runway introduced General World Models, aiming to create AI systems capable of building internal representations of environments to simulate future events.
+Their goal is to represent and simulate a broad spectrum of situations and interactions, surpassing confined settings like video games or driving simulations.
+Qwen2.5-Math-1.5B Model's Longcot Struggles: A user found that the Qwen2.5-Math-1.5B model has difficulties with longcot examples, needing help with configuring the dataset structure and the GRPOTrainer.
+They linked their Kaggle notebook requesting guidance on solving these issues.
+Interconnects (Nathan Lambert) Discord
+
+Unitree Unleashes Open Source Trove: Unitree Robotics has open-sourced multiple repositories, offering access via their GitHub.
+This move opens up possibilities for collaborative development and innovation in robotics.
+GPT-4.5 Ascends Arena Throne: GPT-4.5 has seized the top spot on the Arena leaderboard across all categories, including Multi-Turn, Hard Prompts, Coding, Math, Creative Writing, Instruction Following, and Longer Query (source).
+The latest ratings cement GPT-4.5 as state of the art for the moment.
+Anthropic's Astronomical Ascent Continues: Anthropic secured $3.5 billion in funding at a staggering $61.5 billion post-money valuation, with Lightspeed Venture Partners leading the charge (source).
+The funding aims to advance their AI systems' development, deepen understanding of their functionality, and propel international growth.
+Grok3 Pricing Structure Surfaces?: Potentially leaked Grok3 pricing details suggest costs of $3.50/million for input, $0.875/million for cached input, and $10.50/million for output, as reported in this tweet.
+The leaked pricing model offers insights into the potential costs for leveraging Grok3 in various applications.
+Human Data Still Vital for Real-World AI?: A blog post (https://www.amplifypartners.com/blog-posts/annotation-for-ai-doesnt-scale) contends that human data remains essential for building truly useful AI products.
+This perspective challenges the notion that synthetic data alone can drive substantial advancements in model performance.
+Yannick Kilcher Discord
+
+Claude Cracks Coding Challenge: A member reported using Claude and Cursor to complete 95% of the work on this GitHub Pull Request involving granular configuration options.
+The member was working on the object-property-newline rule by adding support for granular configuration options, allowing developers to specify different behaviors for different node types.
+Tackling Tricky Time Slots: A member initially considered presenting on Joscha Bach, but it's unclear if this was the final topic.
+Another member offered to present in the timeslot if there were no other presentations scheduled, and offered further advice to those interested.
+Elsagate Erupts Again: A member shared a YouTube video titled "Elsagate 3.0 Is Worse Than we Thought" with a warning that it is NOT FOR CHILDREN.
+Another member responded, stating, "Well, that is horrifying."
+Notebook LM Discord
+
+Financial Statements enter NotebookLM: A member inquired about loading financial statements for analysis into NotebookLM to automate financial analysis.
+This suggests interest in using NotebookLM for professional tasks.
+Podcast Length Debate and Timeline Demands Aired: Concerns were expressed about podcast length and coverage of important topics, referencing a Supreme Court Application found here.
+A member requested timelines be added to the podcast free version, while another member shared an example notebooklm podcast.
+Dynamic Docs, a Feature that is MIA: Members are curious if NotebookLM can dynamically update from sources like Google Docs, for use cases like tracking furniture dimensions.
+Because the feature is not automatic it has lead to discussions about workarounds and feature requests.
+Notebook Sharing Snafu Defused!: A user reported a server error when sharing notebooks with Gmail personal accounts, specifically "You are not allowed to access this notebook".
+The issue was resolved when the user found the recipient had a new phone not correctly configured with their gmail account.
+Stability.ai (Stable Diffusion) Discord
+
+Face Copy Alternatives Emerge: Members debated the best ways to copy faces, with some preferring reference only in ControlNet while others recommended Reactor Faceswap as a preferable alternative to IP-Adapter.
+The community consensus seems to favor ControlNet for its versatility.
+Reforge's AMDGPU Support Remains Murky: A user reported conflicting information regarding Reforge supporting AMDGPU, as it's mentioned on the Stability Matrix but not on the GitHub page.
+Another user's attempt to use Zluda resulted in PC freezes, leading to skepticism about the accuracy of the Stability Matrix and a recommendation to use a UI outside matrix.
+DirectML and Reforge Don't Mix: A member's attempt to use Reforge with DirectML after Zluda failed proved unsuccessful.
+There was a discussion about a potential fork of Reforge for AMD by Lshqtiger.
+CivitAI Offers Free Image Generation: Members discussed CivitAI as a platform for image generation requests, noting it provides a few starting credits and 25 free daily credits that can be saved.
+The cost to use the platform depends on the model selected.
+Local Image Generation Requirements Detailed: One member asked about the requirements for creating images locally; another responded that a GPU with around 6-8GB VRAM is recommended, along with other resources in <#1002602742667280404>.
+Another member shared links to CivitAI for online generation as an alternative.
+Eleuther Discord
+
+ReasonableLLAMA-Jr-3b Seeks Feedback: A member requested feedback on their ReasonableLLAMA-Jr-3b model, a reasoning model trained with GRPO on LLAMA 3.2 3B, based on concepts from the Atom of Thoughts (AoT) paper.
+The model uses a custom-written GRPO-based Agent in a Gym environment using MLX, where each state transition in the reasoning process is a self-contained, atomic question, as described in Atom of Thoughts for Markov LLM Test-Time Scaling.
+Recurrent LLM Reasoning: Exorbitant?: Members debated whether recurrent LLM reasoning, which requires compute equivalent to a 32B parameter model to match the performance of a 7B model, is practical.
+The key question posed was: why not train a 32B parameter model instead and use early exit, mixture of depths, or speculative decoding for cheaper inference?
+Troubleshooting 'trust_remote_code' in Harness: A user questioned if trust_remote_code is unconditionally set in lm-evaluation-harness, pointing to a specific line in the GitHub repo.
+A member clarified that trust_remote_code is set only if the --trust_remote_code argument is provided, referencing the relevant section of the code.
+Unveiling Dataset Kwargs Pathway: A user inquired whether setting trust_remote_code would override dataset_kwargs when loading a local dataset.
+A member clarified that dataset_kwargs are passed to datasets.load_dataset(...) within the harness, linking to the relevant part of the code.
+User Reports Dataset Generation Error: A user reported encountering a dataset generation error while running lm_eval with a configuration specifying dataset_path: json and a data_dir containing train.jsonl, validation.jsonl, and test.jsonl.
+In response, a member advised manually testing the dataset loading with load_dataset and trying an absolute path for the data directory.
+MCP (Glama) Discord
+
+MCP Terraform Registry Faces Issues: Users reported issues getting terraform-registry-mcp and aws-mcp server to function, especially with Claude desktop and Cline when a system-level proxy is enabled, causing mcp-server-fetch errors.
+The issue seems related to proxy settings interfering with the server's ability to fetch necessary resources.
+Multi-Agent MCP Architectures Arise: A member explored implementing MCP for multi-agent systems, referencing an Anthropic workshop at AI Engineering Summit and shared an image from the workshop.
+They are building a framework for agents to cooperate across devices and considering adopting MCP, with inspiration from examples like BabyAGI and Stanford generative agents.
+Fast Agent Framework Floats into Focus: A member shared their project, fast-agent on GitHub, for Defining, Prompting and Testing MCP enabled Agents and Workflows.
+The framework allows each agent to be configured with a separate set of MCP servers and can be called as a tool by other agents.
+Node Version Nightmares Nag Claude Users: Users reported encountering a Cannot find package 'timers' error when using fastmcp in Claude desktop.
+The problem was traced back to an outdated Node v14 version that Claude was utilizing.
+MCPHub.nvim Navigates Neovim: A new MCPHub.nvim plugin was released, which assists in managing MCP servers within Neovim, and offers features like smart server lifecycle management and integration with CodeCompanion.nvim for AI chat.
+The plugin, installable with a single command (:MCPHub), provides a streamlined setup process for MCP server management.
+DSPy Discord
+
+Ash Framework Ecosystem Gets Love: A member suggested the Ash framework for a project, pointing to the ash-project/ash_ai GitHub repository.
+They highlighted instructor_ex, which provides structured outputs for LLMs in Elixir, and directed users to the Ash Discord community for guidance.
+Async Support Initiative Ignites DSPy: A member inquired about the motivations and anticipated performance boosts of full async support in DSPy, and linked to another Discord invite link.
+A core contributor announced intentions to make async support native, and requested feature requests via GitHub issues to prevent Discord oversight.
+LangProBe Benchmarks Program Composition: A new paper, LangProBe: a Language Programs Benchmark, evaluates the impact of DSPy program composition and optimizers on different tasks, while exploring cost/quality tradeoffs.
+As noted in its X/Twitter post, the paper shows that smaller models in optimized programs can outstrip larger models at a lower cost.
+Minions Prep for Cost Dominance: A member indicated that the just-released LangProBe paper provides a good baseline for benchmarking their implemented minions feature, referencing their closed pull request.
+The member added MinionsLM and StructuredMinionsLM for intelligent LM routing, and emphasized the direct relevance of the paper to cost optimization.
+LlamaIndex Discord
+
+AgentWorkflow Context: A member asked about the distinction between Context and Chat History within AgentWorkflow.
+Another member responded that the chat history is inside the context.
+LlamaIndex Integrates MCP Support: A user asked about MCP support in LlamaIndex, and another confirmed it exists with an example notebook.
+The notebook demonstrates how to use MCP with LlamaIndex.
+LlamaParse's Latest Models Parse with Agent: The 'Parse With Agent' mode now supports AnthropicAI Claude Sonnet 3.7 and Google Gemini 2.0 Flash, enhancing table parsing and cross-page consistency (announcement).
+These updates should improve the accuracy and reliability of parsing complex documents.
+Need PII? Ask LlamaIndex!: A member is seeking both paid and open-source options for redacting Personally Identifiable Information (PII) from PDFs and images before sending them to an LLM.
+This request highlights the growing need for robust PII redaction tools in LLM applications.
+Windsurf not riding high due to Checkpoint Absence: A member noted the absence of a checkpoint feature in Windsurf, noting the inability to revert to previous states despite repeated coding attempts and file/workspace manipulations.
+The member attached an image illustrating their attempts to drag and drop files into the tab menu, seeking a way to access previous checkpoints.
+Latent Space Discord
+
+AI Not Quite Replacing Programmers Yet: An O'Reilly article suggests AI tools are evolving programming, similar to historical changes since the early days of physical circuit programming.
+Members agreed, noting that LLMs accelerate learning and that this is similar to past complaints about copying from StackOverflow.
+Senior Engineers Rule AI Outputs: Senior engineers effectively guide AI's output with their expertise, preventing unmaintainable code when using tools like Cursor or Copilot.
+While AI speeds up implementation, senior engineers ensure code maintainability, a skill often lacking in junior engineers.
+Anthropic Scores Massive Funding Round: Anthropic secured $3.5 billion in funding, valuing the company at $61.5 billion post-money, with Lightspeed Venture Partners leading the round.
+This investment will support the advancement of AI systems, enhance understanding of their functionality, and support global expansion.
+Stagehand Tooling Sought for Pythonistas: Following a Latent Space podcast episode on Browserbase, a member sought a self-healing browser workflow tool akin to Stagehand in Python.
+Another member suggested stagehand-py, noting that “it's wip”.
+Cursor Beats Claude Code in Code Cagefight: Members compared Claude Code against Cursor, with Cursor being favored for its rollback capabilities.
+Feedback indicated that Claude Code struggles with focus, adds unnecessary code, is more expensive, and lacks the speed of Cursor for code edits.
+tinygrad (George Hotz) Discord
+
+Tinygrad Aims for Fair Compute Marketplace: George Hotz (@tinygrad) describes tinygrad as a formalist project to capture Software 2.0 in a non-leaky abstraction, aiming for a fair marketplace for compute, similar to Linux and LLVM.
+Hotz anticipates tinygrad's speed on NVIDIA to match the existing torch CUDA backend by year-end, sans CUDA, and envisions a test cloud for renting FLOPS in a lambda function.
+Ops.CAT Speed Bounty Faces LLVM Rewriting Issues: A member reported ongoing challenges with the Ops.CAT speed bounty, specifically struggling to get it to rewrite in LLVM, despite being scheduled.
+The current Ops.CAT operations feature a complex structure of PAD, RESHAPE, and BUFFER operations, with arg representing the two tensors to concatenate.
+RDNA2/RX6000 Usability Inquiries with tinygrad: A user asked about RDNA2/RX6000/GFX1030 usability with tinygrad, reporting an OSError: [Errno 22] Invalid argument when running AMD=1.
+Another member said that it should work on Linux, requesting the trace for the OS error which was provided in a trace.txt file.
+Intel Arc A770 Plays Nice with OpenCL: A member confirmed that Intel Arc A770 is indeed usable with tinygrad.
+The recommendation is to utilize the OpenCL backend by setting GPU=1.
+LLM Agents (Berkeley MOOC) Discord
+
+Sutton Dives into Coding Agents: Amazing guest speaker Charles Sutton presented on Coding Agents and AI for Vulnerability Detection, at Lecture 5.
+The lecture explores using LLM agents for computer security tasks like finding software vulnerabilities, and discusses design issues in LLM agents.
+DeepMind Researcher Wins Accolades: Charles Sutton, a Research Scientist at Google DeepMind, has research in machine learning motivated by applications in code generation, software engineering, programming languages, and computer security.
+Sutton's work in software engineering has received two ACM Distinguished Paper Awards (FSE 2014, ICSE 2020) and a 10-year Most Influential Paper award (MSR 2023).
+Quiz Posting Day Revealed: A user asked when the quiz is posted each week, to which another user responded that they generally try to release it Wed/Thurs.
+This question was asked in the mooc-questions channel.
+Audio Issues Plague Lecture: A member reported not being able to hear questions during the lecture due to audio problems, requesting assistance from someone in the room, in the mooc-lecture-discussion channel.
+A staff member apologized for the audio issues during the lecture and promised to remind the speakers to repeat all questions going forward.
+Cohere Discord
+
+Cohere Image Embedding Issue Vanishes: A user reported an issue with embedding images using Cohere, but later confirmed that the issue mysteriously resolved itself.
+Another member simply acknowledged the resolution without further comment.
+Cohere Probes Pesky 504 Errors: A Cohere member mentioned that while they didn't observe a spike in 504 errors, they did note super slow requests as a potential cause.
+The member is planning to investigate the source of the slow requests further, thanking the user for the heads up.
+Modular (Mojo 🔥) Discord
+
+owned Becomes own by Pull Request: A member submitted a pull request to rename owned to own for consistency with the rest argument convention.
+The renaming aims to align with established coding practices and enhance readability.
+Community Meeting Needs Speakers: The upcoming community meeting, scheduled in one week, seeks speakers to present talks or showcase projects.
+Interested individuals should contact the organizers to secure a spot on the agenda.
+AWS GenAI Loft Hosts MAX Engine Event: An event titled Beyond CUDA: Accelerating GenAI Workloads with Modular’s MAX Engine, Hosted by AWS will take place at the AWS GenAI Loft.
+The event, targeted for the Bay Area audience, is scheduled for tomorrow evening.
+SIMD DType Construction Explained: A discussion clarified that SIMD[DType.uint8, 1](0).type returns the dtype at compile time, using var a = UInt8(0); alias dtype = __typeof(a).type as an example.
+A member highlighted that SIMD includes construction checks within its implementation, which helps with validity and type safety.
+Parameter Injection Favored over Globals: In response to a question about using globals, a member asserted that injecting parameters is generally preferable, if you have the time.
+This preference aligns with best practices for code maintainability and testability.
+Torchtune Discord
+
+Step-Based Checkpointing Keeps Compute Alive: Members expressed interest in, and confirmed the ongoing implementation of, step-based checkpointing to mitigate compute waste from training failures.
+This feature saves progress at regular intervals, reducing the impact of interruptions.
+Torch Users Trace with Tensorboard: Torch users debated strategies for visualizing profiler traces, initially attempting Tensorboard but noting the removal of certain plugin features for PyTorch.
+They recommended the PyTorch memory visualizer tool and Perfetto for memory and timing traces as sufficient for following the trail.
+Alternative Profiling Tools Prevail: The discussion underscored the PyTorch memory visualizer tool and Perfetto as solid alternatives for memory and timing traces, respectively.
+These tools arose after users flagged issues with Tensorboard, specifically the absence of some plugin features for PyTorch.
+Nomic.ai (GPT4All) Discord
+
+Ollama vs GPT4All: Which Llama Reigns Supreme?: A user questioned why people choose Ollama or Llama.cpp over GPT4All, arguing that GPT4All's out-of-the-box functionality makes it a better choice.
+The user did not provide specific details on the comparison metrics, but emphasized the ease of use as a key advantage.
+GPT4All Interface to Get Catalan Language Support: A community member requested the addition of Catalan as a language option for the GPT4All interface.
+The request highlighted the presence of Catalan speakers in the community and the potential benefit of localized support.
+Security hole found, GPT4All v3.10.0 faces Vulnerability: A user reported a potential vulnerability in GPT4All v3.10.0 and asked about the proper way to report it.
+No details about the nature of the vulnerability were disclosed in the message, but prompt reporting was advised.
+The MLOps @Chipro Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+The Gorilla LLM (Berkeley Function Calling) Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+The AI21 Labs (Jamba) Discord has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+
+PART 2: Detailed by-Channel summaries and links
+
+The full channel by channel breakdowns have been truncated for email.
+
+If you want the full breakdown, please visit the web version of this email: [AINews] Anthropic's $61.5B Series E!
+
+If you enjoyed AInews, please share with a friend! Thanks in advance!
+
+This was issue #393 of AI News. You can subscribe, unsubscribe, or view this email online.
+
+This email brought to you by Buttondown, the easiest way to start and grow your newsletter.
+
+​
